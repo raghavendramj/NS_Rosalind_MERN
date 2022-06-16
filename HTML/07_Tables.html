@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Table Demo</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      
+      tr,
+      th,
+      td {
+        padding: 10px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables Demo</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sl.No</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Sachin</td>
+          <td>sachin@gmail.com</td>
+          <td rowspan="2">ROWSPAN:- 7562256845</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ganguly</td>
+          <td>ganguly@gmail.com</td>
+          <!-- <td>9865321456</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td colspan="2">COLSPAN:- Adam Gilchrirst</td>
+          <td>adam.gilchrist@gmail.com</td>
+          <!-- <td>9865321456</td> -->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
