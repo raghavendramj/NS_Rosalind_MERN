@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <!-- GET => fetch the data from backend
+        select * from employee where id=1;
+        -> all the details of employee table.
+    -->
+
+    <!-- POST => used to create a entry in the table 
+        insert into employee values('raghav', 'abc@123');
+        -> save the data of employee!
+    -->
+
+    <form action="welcome.html" method="POST">
+      <table>
+        <tr>
+          <td><label for="username">Username :- </label></td>
+          <td><input type="text" name="user_name" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password :- </label></td>
+          <td><input type="password" name="passWord" id="password" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Submit Form" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+
+<!-- GET Request -->
+<!-- URL -> http://127.0.0.1:5500/welcome.html
+  ?user_name=raghav
+  &passWord=newton@123 -->

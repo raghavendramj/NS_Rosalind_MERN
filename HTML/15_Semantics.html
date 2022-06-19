@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>HTML 5 Contents</title>
+    <style>
+      li {
+        display: inline-block;
+        margin: 2px;
+        border: 2px solid green;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+
+      #aside {
+        width: 20%;
+        border: 1px solid blue;
+        padding: 10px;
+      }
+
+      #main {
+        position: relative;
+        left: 22%;
+        width: 78%;
+      }
+      section {
+        display: inline-block;
+      }
+
+      header {
+        top: 0;
+        left: 0;
+      }
+      footer {
+        border: 2px solid blue;
+        padding: 5px;
+
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Sematic Elements</h1>
+    <header>
+      Welcome to HTML Semantic Elements
+      <nav>
+        <ul type="none">
+          <li>Sports</li>
+          <li>News</li>
+          <li>Regional</li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <section id="aside">
+        <aside>
+          <h1>Latest Cricket News</h1>
+          <div>
+            <a href=""> Virat Kohli resigns captaincy! </a>
+          </div>
+          <br />
+          <div>
+            <a href=""> India vs South Africa News </a>
+          </div>
+          <br />
+          <div>
+            <a href=""> Australia vs Srilanka news </a>
+          </div>
+        </aside>
+      </section>
+      <section id="main">
+        <a href=""
+          >Virat Kohli resigns his captaincy from Test Match Cricket!</a
+        >
+        <p>
+          Kohli had stepped down from the Test captaincy role earlier last week
+          a day after the Test series ended in Cape Town, marking an end of an
+          era in Indian cricket.
+        </p>
+      </section>
+    </article>
+
+    <footer>All copy rights reserved</footer>
+  </body>
+</html>

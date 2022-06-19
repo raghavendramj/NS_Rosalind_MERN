@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>HTML Form Input Fields</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      tr,
+      td {
+        border: 1px solid rgba(59, 153, 51, 0.616);
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>HTML Form Fields</h2>
+    <form action="welcome.html" method="get">
+        <table>
+            <tr>
+              <td><label for="email">Email</label></td>
+              <td colspan="3">
+                  <input type="email" name="email" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="username">Username</label></td>
+              <td colspan="3">
+                  <input 
+                  type="text" 
+                  name="username"
+                  minlength="3"
+                  maxlength="8"
+                  />
+                </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password</label></td>
+              <td colspan="3"><input type="password" name="password" /></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender</label></td>
+              <td><input type="radio" name="groupGender" />Male</td>
+              <td><input type="radio" name="groupGender" />Female</td>
+              <td><input type="radio" name="groupGender" />Others</td>
+            </tr>
+            <tr>
+              <td><label for="hobbies">Hobbies</label></td>
+              <td><input type="checkbox" />Reading Books</td>
+              <td><input type="checkbox" />Playing Instruments</td>
+              <td><input type="checkbox" />Trekking</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="3"><input type="submit" value="Submit Form" /></td>
+            </tr>
+          </table>
+    </form>
+  </body>
+</html>
