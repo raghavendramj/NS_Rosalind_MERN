@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Even and Odd Child Styling</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+
+      thead {
+        background-color: yellow;
+      }
+
+      td,
+      tr,
+      th {
+        border: 2px solid green;
+        padding: 5px;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: lightgray;
+      }
+
+      tbody > tr:nth-child(even) {
+        background-color: lightcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Sl.No</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Virat</td>
+          <td>virat@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rohith</td>
+          <td>rohith@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Hardhik</td>
+          <td>hardhik@gmail.com</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Hooda</td>
+          <td>hooda@gmail.com</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Rishabh</td>
+          <td>rishabh@gmail.com</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Bumrah</td>
+          <td>bumrah@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
