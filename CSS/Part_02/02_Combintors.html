@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>CSS Combinators -02</title>
+    <style>
+      p {
+        border: thin solid red;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      div {
+        border: thin solid blue;
+        border-radius: 5px;
+        color: green;
+        margin: 5px;
+        padding: 10px;
+      }
+
+      /* Adjacent Sibling Selector (+) */
+      p + div {
+        background-color: antiquewhite;
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      h2 + p {
+        background-color: yellow;
+      }
+
+      /* General Sibling Selector (~) */
+      h3 ~ p {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Combinators</h2>
+    <p>A fundamental concept</p>
+    <p>Optimization</p>
+    <div>Adaption of New Technology</div>
+    <div>Enhances Creativity and Innovation</div>
+    <h2>This is a simple h2</h2>
+    <p>Strings:- Spam email detection.</p>
+    <div>Getting Insights view of data</div>
+    <h3>Arrays:- Book titles in a Library Management Systems.</h3>
+    <p>Arrays:- Online ticket booking</p>
+    <p>Strings:- Spam email detection.</p>
+  </body>
+</html>

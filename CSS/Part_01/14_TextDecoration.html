@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Text Decoration</title>
+    <style>
+      div {
+        padding: 10px;
+        border: 1px solid blue;
+        margin: 10px;
+        font-size: 30px;
+      }
+      h2 {
+        text-decoration-line: none;
+        text-decoration-color: purple;
+      }
+
+      /* div.mistake {
+        text-decoration-line: line-through;
+        text-decoration-color: red;
+        text-decoration-style: wavy;
+      }
+
+      div.correct {
+        text-decoration-line: underline;
+        text-decoration-color: purple;
+        text-decoration-style: dotted;
+      }
+
+      div.info {
+        text-decoration-line: overline;
+        text-decoration-color: orange;
+        text-decoration-style: double;
+      } */
+
+      div.mistake {
+        /* SHORT HAND -> line, style, color, thickness */
+        text-decoration: line-through #ff0000 wavy 4px;
+      }
+
+      div.correct {
+        text-decoration: underline #00ff00 double 2px;
+      }
+
+      div.info {
+        text-decoration: overline #0000ff dotted 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Decorattion demo</h1>
+    <h2>Welcome to the world of STYLES!</h2>
+    <div class="mistake">Lion is national animal of India</div>
+    <div class="correct">Tiger is national animal of India</div>
+    <div class="info">Also, Peocock is national bird of India</div>
+  </body>
+</html>
