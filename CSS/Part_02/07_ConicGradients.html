@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Conic Gradients</title>
+    <style>
+      div {
+        line-height: 200px;
+        font-size: 50px;
+        border: 2px solid black;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+        height: 150px;
+        width: 200px;
+      }
+      .gradient-01 {
+        background-image: conic-gradient(red, yellow, green, blue, black);
+      }
+      .gradient-02 {
+        background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+      }
+      .gradient-03 {
+        border-radius: 50%;
+        background-image: conic-gradient(red, yellow, green, blue, black);
+      }
+      .gradient-04 {
+        border-radius: 50%;
+        background-image: conic-gradient(
+          red 0deg,
+          red 90deg,
+          yellow 90deg,
+          yellow 180deg,
+          green 180deg,
+          green 270deg,
+          blue 270deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conic Gradients</h1>
+    <div class="gradient-01"></div>
+    <div class="gradient-02"></div>
+    <div class="gradient-03"></div>
+    <div class="gradient-04"></div>
+  </body>
+</html>
