@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Pseudo Classes -01 </title>
+    <style>
+    /* unvisited link */
+     a:link{
+        color: red;
+     }
+    /* visited link */
+     a:visited{
+        color: green;
+     }
+     
+    /* mouse over link */
+    a:hover{
+        color: brown;
+        background-color: antiquewhite;
+     }
+    /* selected link */
+     a:active{
+        color: aquamarine;
+     }
+    </style>
+  </head>
+  <body>
+    <h2>Styling a link depending on state</h2>
+    <p><b><a href="https://newtonschool.co.in" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    
+  </body>
+</html>

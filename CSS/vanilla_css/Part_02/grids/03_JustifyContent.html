@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>CSS Grids - Container</title>
+    <style>
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px 0;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .grid-container {
+        background-color: #2196f3;
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        gap: 10px;
+
+        /*space-evenly, space-between, 
+        space-around, center, start, end */
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </div>
+  </body>
+</html>

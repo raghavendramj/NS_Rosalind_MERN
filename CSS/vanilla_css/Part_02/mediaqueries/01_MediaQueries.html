@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>CSS Media Queries</title>
+    <style>
+      body {
+        background-color: lightgreen;
+        font-size: 40px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        body {
+          background-color: lightblue;
+          font-size: 25px;
+        }
+        div.example {
+            display: none;
+
+        }
+      }
+
+      div.example {
+        background-color: yellow;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Resize the browser window. When the width of this document is 600 pixels
+      or less, the background-color is "lightblue", otherwise it is
+      "lightgreen".
+    </p>
+    <p>
+      When the browser's width is 600px wide or less, hide the div element.
+      Resize the browser window to see the effect.
+    </p>
+
+    <div class="example">Example DIV.</div>
+  </body>
+</html>

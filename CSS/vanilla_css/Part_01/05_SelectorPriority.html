@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>CSS Selectors Priority</title>
+
+    <style>
+      p {
+        color: brown;
+        font-size: 30px;
+        font-weight: bolder;
+      }
+
+      .p_class {
+        color: green;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      #p_id {
+        color: red;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Selectors Priority</h2>
+    <p id="p_id" class="p_class">
+      Id has got more Priority than class and tagname/element
+    </p>
+
+    <p class="p_class">Class has got more Priority than tagname/element</p>
+
+    <p>Tagname / Element has got the least Priority</p>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>CSS Positions - Absolute!</title>
+    <style>
+      div {
+        border: 3px solid green;
+        border-radius: 10px;
+      }
+      .relative {
+        width: 400px;
+        height: 400px;
+        position: relative;
+      }
+
+      .absDiv {
+        width: 200px;
+        height: 100px;
+        position: absolute;
+        top: 50;
+        left: 40;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Position :- RELATIVE</h2>
+    <div class="relative">
+      This is external DIV : RELATIVE
+      <div class="absDiv">This is abs div</div>
+    </div>
+  </body>
+</html>

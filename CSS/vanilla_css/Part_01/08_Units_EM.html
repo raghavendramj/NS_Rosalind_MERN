@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Units of CSS - EM</title>
+    <style>
+      * {
+        margin: 10px;
+      }
+
+      body {
+        padding: 1rem;
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        /* Default font size is 16px */
+        font-size: 1em;
+      }
+
+      section {
+        padding: 2em;
+        margin: 10px;
+        border: 2px solid red;
+        /* 1em = 16px */
+        font-size: 2em; /*2em = 2*16px -> 32px*/
+      }
+
+      div {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid blue;
+        /* 1em = 32px */
+        font-size: 2em; /*2em = 32*2 = 64px*/
+      }
+
+      p {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid brown;
+        /* 1rem = root's => body font-size in px = 16px */
+        font-size: 2rem;
+        /*2rem = 16(body's font-size)*2 = 32px*/
+      }
+    </style>
+  </head>
+  <body>
+    This is body 
+    <section>
+      This is section
+      <div>
+        This is div
+        <p>This is paragraph</p>
+      </div>
+    </section>
+  </body>
+</html>

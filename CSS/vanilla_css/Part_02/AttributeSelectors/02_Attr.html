@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>CSS Attribute Selectors</title>
+    <style>
+      div[title~="two"] {
+        background-color: yellow;
+      }
+
+      [class|="top"] {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS [attribute~="value"] Selector</h2>
+    <p>
+      used to select elements with an attribute value containing a specified
+      word.
+    </p>
+    <div title="number two">Number One</div>
+    <div title="three number">Number Two</div>
+    <div title="two and four">Number Three</div>
+    <hr />
+    <h2>CSS [attribute|="value"]</h2>
+    <p>
+      whose value can be exactly the specified value, or the specified value
+      followed by a hyphen (-).
+    </p>
+    <div class="top-header">Welcome</div>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr />
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>CSS Flex Box - Div to Cemter</title>
+    <style>
+      .flex-container {
+        display: flex;
+        height: 500px;
+        background-color: dodgerblue;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 200px;
+        text-align: center;
+        line-height:200px;
+        margin: 10px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Perfect Centering</h2>
+    <div class="flex-container">
+      <div>Center</div>
+    </div>
+  </body>
+</html>
