@@ -2,14 +2,16 @@
   <head>
     <title>Input : checked psuedo classes</title>
     <style>
+      input {
+        border-radius: 3px;
+      }
+
       input:invalid {
         border: 2px solid red;
-        border-radius: 3px;
       }
 
       input:valid {
         border: 2px solid green;
-        border-radius: 3px;
       }
 
       input:focus {
@@ -48,6 +50,21 @@
         background-color: yellow;
         color: red;
       }
+
+      input:disabled {
+        background-color: grey;
+        color: white;
+        opacity: 0.7;
+      }
+
+      input[readonly] {
+        background-color: azure;
+        opacity: 0.7;
+      }
+
+      input:required {
+        background-color: lavenderblush;
+      }
     </style>
   </head>
   <body>
@@ -62,7 +79,22 @@
           <td><label for="">Email :- </label></td>
           <td><input type="email" required /></td>
         </tr>
-
+        <tr>
+          <td><label for="">City :- </label></td>
+          <td><input type="email" value="Bangalore" disabled /></td>
+        </tr>
+        <tr>
+          <td><label for="">State :- </label></td>
+          <td><input type="text" value="Karnataka" readonly /></td>
+        </tr>
+        <tr>
+          <td><label for="">Hobbies :- </label></td>
+          <td>
+            <input type="checkbox" name="hobbies" /> Playing Cricket
+            <input type="checkbox" name="hobbies" /> Listening to Music
+            <input type="checkbox" name="hobbies" /> Sleeping
+          </td>
+        </tr>
         <tr>
           <td><label for="country">Select Country</label></td>
           <td>
@@ -78,7 +110,7 @@
           </td>
         </tr>
         <tr>
-          <td class="chkbx"><input type="checkbox" /></td>
+          <td class="chkbx"><input type="checkbox" required /></td>
           <td>I read terms and conditions!</td>
         </tr>
         <tr>
