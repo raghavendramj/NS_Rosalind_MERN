@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Input : checked psuedo classes</title>
+    <style>
+      input:invalid {
+        border: 2px solid red;
+        border-radius: 3px;
+      }
+
+      input:valid {
+        border: 2px solid green;
+        border-radius: 3px;
+      }
+
+      input:focus {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Input Fields</h1>
+    <form action="">
+      <table>
+        <tr>
+          <td><label for="">Username :- </label></td>
+          <td><input type="text" minlength="3" required /></td>
+        </tr>
+        <tr>
+          <td><label for="">Email :- </label></td>
+          <td><input type="email" required /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
