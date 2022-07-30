@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Flex Container - align-content</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: dodgerblue;
+        height: 600px;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+
+      /* align-items -> vertical movement of flex
+      justify-content -> horizantal movement of flex
+      align-content -> flex lines -> space between 2 or morelines of flexes */
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The align-content Property</h1>
+
+    <p>
+      The "align-content: space-between;" displays the flex lines with equal
+      space between them:
+    </p>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Flex Item - order</title>
+    <style>
+      div {
+        border-radius: 5px;
+      }
+      .flex-container {
+        display: flex;
+        background-color: dodgerblue;
+        align-items: stretch;
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The order Property</h1>
+
+    <p>Use the order property to sort the flex items as you like:</p>
+    <div class="flex-container">
+      <div style="flex-grow: 1">1</div>
+      <div style="flex-grow: 1">2</div>
+      <div style="flex-grow: 8">3</div>
+    </div>
+  </body>
+</html>
