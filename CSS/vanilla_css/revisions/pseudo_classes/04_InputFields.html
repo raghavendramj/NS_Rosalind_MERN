@@ -15,6 +15,39 @@
       input:focus {
         background-color: aquamarine;
       }
+
+      input[type="checkbox"] {
+        color: blue;
+        background-color: aqua;
+      }
+
+      .chkbx {
+        text-align: right;
+      }
+
+      input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+      }
+
+      input:checked {
+        width: 20px;
+        height: 20px;
+      }
+
+      input[type="submit"] {
+        border: 1px solid black;
+      }
+
+      form:invalid input[type="submit"] {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      option:checked {
+        background-color: yellow;
+        color: red;
+      }
     </style>
   </head>
   <body>
@@ -28,6 +61,29 @@
         <tr>
           <td><label for="">Email :- </label></td>
           <td><input type="email" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="country">Select Country</label></td>
+          <td>
+            <select>
+              <option value=" "></option>
+              <option value="India">India</option>
+              <option value="Australia">Australia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="England">England</option>
+              <option value="Russia">Russia</option>
+              <option value="USA">USA</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="chkbx"><input type="checkbox" /></td>
+          <td>I read terms and conditions!</td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit" /></td>
+          <td><input type="reset" value="Clear Fields" /></td>
         </tr>
       </table>
     </form>
