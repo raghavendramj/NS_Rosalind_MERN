@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>JavaScript Intro</title>
+    <title>JavaScript Intro - Intenal- Head</title>
     <script>
       function testIntro() {
         window.alert("Welcome to JS world!");
@@ -11,7 +11,12 @@
   <body>
     <h1>Welcome to JS</h1>
     <button id="btn" onclick="testIntro()">Introduction!</button>
-    <button id="btn" onclick="document.getElementById('demo').innerHTML = new Date()">Show Date and Time!</button>
+    <button
+      id="btn"
+      onclick="document.getElementById('demo').innerHTML = new Date()"
+    >
+      Show Date and Time!
+    </button>
     <p id="demo"></p>
   </body>
 </html>
