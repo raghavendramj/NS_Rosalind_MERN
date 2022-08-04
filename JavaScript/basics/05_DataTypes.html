@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>JavaScript Data Types</title>
+    <script>
+      function dataTypes() {
+        var nameOfThePerson;
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+
+        nameOfThePerson = "John";
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+
+        nameOfThePerson = 12;
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+
+        nameOfThePerson = true;
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+
+        nameOfThePerson = null;
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+
+        nameOfThePerson = { name: "John", age: 25 };
+        console.log("type of(nameOfThePerson): ", typeof nameOfThePerson);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Value Types</h2>
+    <p>Copied By Value</p>
+    <ul>
+      <li>Number</li>
+      <li>String</li>
+      <li>Boolean</li>
+      <li>Symbol</li>
+      <li>undefined</li>
+      <li>null</li>
+    </ul>
+
+    <button onclick="dataTypes()">Invoke Datatypes!</button>
+  </body>
+</html>
