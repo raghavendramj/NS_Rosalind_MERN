@@ -20,3 +20,11 @@ function add(a, b) {
 
 var result1 = add(10, 20);
 console.log("Out res is ", result1);
+
+//Funtion expression
+var subtract = function (a, b) {
+  return a - b;
+};
+
+console.log("Subtract function object!:- ", subtract);
+console.log("Subtract function invocation:- ", subtract(20, 5));
