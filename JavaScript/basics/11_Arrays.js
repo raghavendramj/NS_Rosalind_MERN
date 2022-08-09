@@ -50,7 +50,7 @@ function addRemoveElementsFromBeggining() {
   students.shift();
 
   console.log(
-    "***************** After deletion from beginning ***************"
+    "************* After deletion from beginning ***********"
   );
   printElements(students);
 }
@@ -89,7 +89,7 @@ function mergeTwoArrays() {
 
 function spliceMethods() {
   // Parameters
-  // 1 -> from position where elements needs to be added
+  // 1 -> from position where elements needs to be added/removed
   // 2 -> how many elements needs to removed
   // 3 and afterwards -> (element(s) that needs to be added);
 

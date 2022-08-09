@@ -14,6 +14,8 @@ function firstWay() {
   console.log(facCricle2);
 }
 
+
+// A constructor returns an instance of the class you call it on
 function secondWay() {
   //2nd Way -> Constructor function
   function Cricle(radius) {
@@ -28,8 +30,8 @@ function secondWay() {
 
   // 1. new -> create an empty object {}
   // 2. it will set that empty object to that current object
-  // 3. returns the object from the fuction
-  // Happens in sequence and automatically
+  // 3. returns the object from the function
+  // The above 3 steps happens in sequence and automatically
 
   function Employee(id, fname, lname, city, email) {
     this.id = id;
@@ -49,3 +51,14 @@ function secondWay() {
   console.log("employee2.fullName() -> ", employee2.fullName());
 }
 secondWay();
+
+function Rectangle(len, bdth) {
+  'use strict'; // -> empty -> {} <- this
+  this.length = len;
+  this.breadth = bdth;
+  this.getArea = function(){
+      return this.length * this.breadth;
+  }
+  console.log("Finally Object:- ", this);
+}
+var obj = new Rectangle(10, 5);
