@@ -21,6 +21,7 @@ function salaryOfEmployee(salary) {
   var salary = salary;
   function changeSalary(amount) {
     //Inner fuction -> CLOSURE -> salary
+    //A closure gives you access to an outer function's scope from an inner function.
     salary += amount;
     console.log("Updated Salary is ", salary);
   }
