@@ -1,4 +1,4 @@
-// Value Types:- Copied By Valu
+// Value Types:- Copied By Value
 // Number
 // String
 // Boolean

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JS Stopwatch exercise</title>
+
+    <script>
+      setInterval(function () {
+        if (stopWatch.duration > 0) {
+          getDuration();
+        }
+      }, 1);
+
+      function getDuration() {
+        var span = document.getElementById("duration");
+        //console.log("Current duration is:- ", stopWatch.duration);
+        span.innerHTML = stopWatch.duration;
+      }
+    </script>
+    <script src="04_Assignment.js"></script>
+  </head>
+  <body>
+    <h1>Stopwatch Application!</h1>
+    <button onclick="stopWatch.start()">Start the Watch</button>
+    <button onclick="stopWatch.stop()">Stop the Watch</button>
+    <button onclick="getDuration()">Get Current Duration</button>
+    <p>Current Duration:- <span id="duration"></span></p>
+  </body>
+</html>

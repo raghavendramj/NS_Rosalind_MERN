@@ -21,7 +21,7 @@ function add(a, b) {
 var result1 = add(10, 20);
 console.log("Out res is ", result1);
 
-//Funtion expression
+//Function expression
 var subtract = function (a, b) {
   return a - b;
 };

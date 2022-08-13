@@ -74,18 +74,18 @@ function arr_join() {
 }
 // arr_join();
 
-function mergeTwoArrays() {
-  var arr2 = ["Sahil", "Pavan", "Neeraj", "Saurbh"];
-  var arr3 = ["Jasmeen", "Aparana", "Sukhbir"];
-  var arr4 = [1, 2, 3, 4, 5];
-  //   var clubbedArray = arr2.concat(arr3).concat(arr4);
-  //   var clubbedArray = arr2 +  arr3 + arr4; //Will convert it to a string with comma seperated
-  var clubbedArray = arr2.concat(arr3, arr4);
-  console.log("arr2 :- ", arr2);
-  console.log("arr3 :- ", arr3);
-  console.log("arr2.concat(arr3) :- ", clubbedArray);
+function mergeArrays() {
+  var arr1 = ["Agam", "Aishwarya"];
+  var arr2 = ["Jeevan", "Harshith"];
+  var arr3 = ["Prashanth", "Chaithra"];
+  var clubbedArrays = arr1.concat(arr2);
+  console.log("1. Two arrays :- ", clubbedArrays);
+  clubbedArrays = arr1.concat(arr2, arr3);
+  console.log("2. Three arrays :- arr1.concat(arr2, arr3):- ", clubbedArrays);
+  clubbedArrays = arr1.concat(arr2).concat(arr3);
+  console.log("3. Three arrays :- arr1.concat(arr2).concat(arr3) :- ", clubbedArrays);
 }
-// mergeTwoArrays();
+//mergeArrays(); 
 
 function spliceMethods() {
   // Parameters

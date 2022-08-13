@@ -9,9 +9,8 @@ function Product(price, brand, name, quantity) {
 
   //Private function
   var getInfo = function () {
-    var text = `${name}  of brand  ${brand} having quantity :- ${quantity} is worth ${
-      price * quantity
-    }`;
+    var finalPrice = price * quantity;
+    var text = `${name} of brand ${brand} having quantity ${quantity} is worth ${finalPrice}`;
     console.log(text);
   };
 

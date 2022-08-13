@@ -24,14 +24,13 @@ function objectExample() {
 // objectExample();
 
 function forInLoop() {
-    for (var eachProperty in carObject) {
-        console.log(
-            "For in :- Key is ",
-            eachProperty,
-            " value :- ",
-            carObject[eachProperty]
-        );
+  for (var eachKey in carObject) {
+    if (typeof carObject[eachKey] === "function") {
+      carObject[eachKey]();
+    } else {
+      console.log("key :- ", eachKey, " value :- ", carObject[eachKey]);
     }
+  }
 }
 // forInLoop();
 

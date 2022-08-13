@@ -32,7 +32,7 @@ function searchMethod() {
 
 function substringMethod() {
   var str = "my favorite country is India";
-  //first param -> start-index, second -> end-index
+  //first param -> start-index, second -> end-index(exclusive)
   console.log("str.substring(3, 11) :- ", str.substring(3, 10));
 
   //first param -> start index, second -> length
