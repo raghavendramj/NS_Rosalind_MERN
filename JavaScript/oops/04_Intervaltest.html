@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>SetTimeINterval Test</title>
+    <script src="04_Assignment.js"></script>
+    <script>
+      function getDuration() {
+        var span = document.getElementById("duration");
+        //console.log("Current duration is:- ", stopWatch.duration);
+        span.innerHTML = stopWatch.duration ? stopWatch.duration : 0;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Press start/stop button to start/stop setInterval() call.</p>
+    <button type="button" id="startBtn">Start</button>
+    <button type="button" id="stopBtn">Stop</button>
+    <div id="myDiv"></div>
+    <script>
+      var intervalID;
+
+      // Function to call repeatedly
+      function sayHello() {
+        document.getElementById("myDiv").innerHTML = stopWatch.duration;
+      }
+
+      // Function to start setInterval call
+      function start() {
+        stopWatch.start();
+        intervalID = setInterval(sayHello, 1000);
+      }
+
+      // Function to stop setInterval call
+      function stop() {
+        stopWatch.stop();
+        clearInterval(intervalID);
+      }
+
+      document.getElementById("startBtn").addEventListener("click", start);
+      document.getElementById("stopBtn").addEventListener("click", stop);
+    </script>
+  </body>
+</html>
