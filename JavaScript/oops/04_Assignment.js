@@ -5,7 +5,12 @@
 // 3. Reset
 // 4. duration -> the current duration
 
+var myInterval;
 function stopwatch() {
+  function everyTime() {
+    getDuration();
+  }
+
   var startTime,
     endTime,
     running,
@@ -18,7 +23,7 @@ function stopwatch() {
     running = true;
     console.log("Current duration at start :- ", duration);
     startTime = new Date();
-
+    myInterval = setInterval(everyTime, 1);
   };
 
   this.stop = function () {
@@ -29,6 +34,8 @@ function stopwatch() {
     endTime = new Date(); //This will fetch the current data and time.
     const durationCompleted = (endTime.getTime() - startTime.getTime()) / 1000;
     duration += durationCompleted;
+    //clearInterval(myInterval);
+    getDuration();
   };
 
   this.reset = function () {
@@ -36,16 +43,22 @@ function stopwatch() {
     endTime = null;
     running = false;
     duration = 0;
+    //clearInterval(myInterval);
+    getDuration();
   };
 
   Object.defineProperty(this, "duration", {
     get: function () {
       if (endTime == null && startTime == null) {
         console.log("Stopwatch was never started or it has got reseted!");
+        clearInterval(myInterval);
         return;
       }
       let tillNow = running ? new Date() : endTime;
-      var tillNowSeconds = duration > 0 ? duration : (tillNow.getTime() - startTime.getTime()) / 1000;
+      var tillNowSeconds =
+        duration > 0
+          ? duration
+          : (tillNow.getTime() - startTime.getTime()) / 1000;
       return tillNowSeconds;
     },
   });

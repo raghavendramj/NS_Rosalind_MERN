@@ -2,17 +2,11 @@
   <head>
     <title>JS Stopwatch exercise</title>
 
-    <script>
-      setInterval(function () {
-        if (stopWatch.duration > 0) {
-          getDuration();
-        }
-      }, 1);
-
+    <script> 
       function getDuration() {
         var span = document.getElementById("duration");
         //console.log("Current duration is:- ", stopWatch.duration);
-        span.innerHTML = stopWatch.duration;
+        span.innerHTML = stopWatch.duration ? stopWatch.duration : 0;
       }
     </script>
     <script src="04_Assignment.js"></script>
@@ -22,6 +16,7 @@
     <button onclick="stopWatch.start()">Start the Watch</button>
     <button onclick="stopWatch.stop()">Stop the Watch</button>
     <button onclick="getDuration()">Get Current Duration</button>
+    <button onclick="stopWatch.reset()">Reset the watch!</button>
     <p>Current Duration:- <span id="duration"></span></p>
   </body>
 </html>
