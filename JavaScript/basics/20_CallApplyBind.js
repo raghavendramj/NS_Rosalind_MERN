@@ -31,12 +31,23 @@ function example() {
     console.log("this :- ", this);
     var result = a + b + this.x + this.y;
     console.log("result :- ", result);
-    console.log("-----------------------------")
+    console.log("-----------------------------");
   }
 
-//   add(12, 14);
+  //add(12, 14);
   var validObject = { x: 20, y: 30 };
+  add.call(validObject, 12, 14);
+  validObject = { x: 34, y: 67 };
   add.call(validObject, 12, 14);
   add.apply(validObject, [12, 14]);
 }
 example();
+
+function Car(model) {
+  this.model = model;
+}
+
+var baleno = new Car("Baleno");
+//new  -> Car.call({})
+//{model: 'Baleno'}
+//return {model: 'Baleno'}
