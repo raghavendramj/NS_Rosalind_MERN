@@ -29,3 +29,12 @@
     document.querySelectorAll('.menu-item, #logo'); 
 
 5) Attribute selector
+
+To select all elements that have a given attribute, you use one of the following attribute selector syntaxes:
+    [attribute] -> document.querySelectorAll('[alt]');
+    [attribute=value] -> document.querySelectorAll('[alt="Logo"]');
+    [attribute~=value]
+    [attribute|=value]
+    [attribute^=value]
+    [attribute$=value]
+    [attribute*$*=value]
