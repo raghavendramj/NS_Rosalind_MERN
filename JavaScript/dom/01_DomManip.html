@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>JavaScript DOM</title>
+  </head>
+  <body>
+    <p>Hello DOM!</p>
+    <p id="message">A Paragraph!</p>
+    <input type="radio" name="language" value="JavaScript" /> JavaScript
+    <input type="radio" name="language" value="TypeScript" /> TypeScript
+    <script>
+      const para = document.getElementById("message");
+      console.log("document -> ", document);
+      console.log("para -> ", para);
+      const languages = document.getElementsByName("language");
+      console.log("languages -> ", languages);
+    </script>
+  </body>
+</html>

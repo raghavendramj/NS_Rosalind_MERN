@@ -51,3 +51,4 @@ var baleno = new Car("Baleno");
 //new  -> Car.call({})
 //{model: 'Baleno'}
 //return {model: 'Baleno'}
+
