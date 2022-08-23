@@ -1,0 +1,31 @@
+1) Universal selector
+    The universal selector is denoted by * that matches all elements of any type:
+        document.querySelector('*');
+
+    And this select all elements in the document:
+        document.querySelectorAll('*');
+
+2) Type selector -> elementName
+    To select elements by node name, you use the type selector e.g., a selects all <a> elements:
+
+    The following example finds the first h2 element in the document:
+        document.querySelector('h2');
+    And the following example finds all h2 elements:
+        document.querySelectorAll('h2');
+
+3) Class selector -> .className
+    The following example finds the first element with the menu-item class:
+        document.querySelector('.menu-item');
+    And the following example finds all elements with the menu class:
+        document.querySelectorAll('.menu-item');
+
+
+4) ID Selector -> #id
+    The following example finds the first element with the id #logo:
+        document.querySelector('#logo');
+    Note:- Since the id should be unique in the document, the querySelectorAll() is not relevant.
+
+5) And the following example finds all elements with the menu-item class and only element with id logo: 
+    document.querySelectorAll('.menu-item, #logo'); 
+
+5) Attribute selector
