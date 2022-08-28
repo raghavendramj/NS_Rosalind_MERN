@@ -23,11 +23,15 @@ let add = (a, b) => {
 };
 
 let operateInSequence = (a, b) => {
-  //   calculate(a, b, add);
+  // calculate(a, b, add);
   calculate(a, b, (a, b) => {
+    // calculate(a, b, subtract);
     calculate(a, b, (a, b) => {
+      // calculate(a, b, multiply);
       calculate(a, b, (a, b) => {
+        // calculate(a, b, division);
         calculate(a, b, (a, b) => {
+          //throw console.error("Things went wrong"); //This will fail the entire flow of callbacks!
           return a / b;
         });
         return a * b;
