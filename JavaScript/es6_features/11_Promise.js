@@ -2,6 +2,12 @@
 //Fans -> Consuming Code
 //Promise -> Links -> Producing Code(Singer) <-> Consuming Code together(Fans)
 
+// A Promise is in one of these states:
+
+// pending: initial state, neither fulfilled nor rejected.
+// fulfilled: meaning that the operation was completed successfully.
+// rejected: meaning that the operation failed.
+
 //Release Song Case / Failurecase
 
 // promise:SUCCESS state: pending -> resolve("done") -> state: fulfilled
