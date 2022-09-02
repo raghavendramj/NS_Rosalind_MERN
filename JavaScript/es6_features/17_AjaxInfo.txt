@@ -1,0 +1,17 @@
+<ul type="square">
+    <li>AJAX is not a programming language.</li>
+ <li>AJAX is a technique for accessing web servers from a web page.</li>
+ <li>AJAX stands for Asynchronous JavaScript And XML.</li>
+</ul>
+
+<p>Returns the status-number of a request</p>
+<ul>
+    <li>200: "OK" -> select * from employee -> (GET).</li>
+ <li>201: "Created" -> insert into employee values(1, 'Raghav'); -> (POST).</li>
+ <li>403: "Forbidden" ->.</li>
+ <li>404: "Not Found".</li>
+ <li>500: Internal Server Error.</li>
+ <li>For a complete list go to the Http Messages Reference.</li>
+</ul>
+
+

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Ajax Introduction!</title>
+    <script>
+      function loadContent() {
+        console.log("Welcome to Ajax");
+
+        let xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "17_AjaxInfo.txt", true);
+        xmlHttp.send();
+
+        xmlHttp.onreadystatechange = () => {
+          if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+            console.log(xmlHttp.readyState, " :- ", xmlHttp.response);
+            document.getElementById("contentDiv").innerHTML = xmlHttp.response;
+            document.getElementById("btn").style.display = "none";
+          } else {
+            console.log("Not yet in consumable state :- ", xmlHttp.readyState);
+          }
+        };
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Ajax Introduction</h1>
+    <button id="btn" onclick="loadContent()">Trigger Ajax Call!</button>
+
+    <div id="contentDiv"></div>
+  </body>
+</html>
