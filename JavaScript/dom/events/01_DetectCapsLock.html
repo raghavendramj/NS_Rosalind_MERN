@@ -13,6 +13,7 @@
       const message = document.querySelector(".message");
 
       textField.addEventListener("keyup", (event) => {
+        console.log(event);
         if (event.getModifierState("CapsLock")) {
           message.textContent = "Caps Lock is ON";
           message.style.color = "red";

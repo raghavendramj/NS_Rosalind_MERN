@@ -1,0 +1,56 @@
+<!-- Stop Propagation of Events -->
+<html>
+  <head>
+    <title>Event Bubbling</title>
+    <style>
+        span{
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        p{
+            border: 2px solid blue;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        div{
+            border: 2px solid yellow;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Event Bubbling</h1>
+    <div id="box">
+        <p id="para">
+          <span id="span">
+            <button class="btn">Bubble Up</button>
+          </span>
+        </p>
+      </div>
+
+    <script>
+     const btn = document.querySelector(".btn");
+      const box = document.querySelector("#box");
+      const para = document.querySelector("#para");
+      const span = document.querySelector("#span");
+
+      btn.addEventListener("click", function (e) {
+        console.log("The button was clicked!");
+      });
+
+      box.addEventListener("click", function (e) {
+        console.log("The box was clicked!");
+      });
+
+      para.addEventListener("click", function (e) {
+        console.log("The para was clicked!");
+      });
+
+      span.addEventListener("click", function (e) {
+        console.log("The span was clicked!");
+      });
+    </script>
+  </body>
+</html>

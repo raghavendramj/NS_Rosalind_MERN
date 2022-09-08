@@ -1,0 +1,40 @@
+<!-- Stop Propagation of Events -->
+<html>
+  <head>
+    <title>Stop Propagation of Events</title>
+  </head>
+  <body>
+    <h1>Stop Propagation of Events</h1>
+
+    <div id="box">
+      <p id="para">
+        <span id="span">
+          <button class="btn">Register</button>
+        </span>
+      </p>
+    </div>
+
+    <div class="message"></div>
+    <script>
+      const btn = document.querySelector(".btn");
+      const box = document.querySelector("#box");
+
+      btn.addEventListener("click", function (e) {
+        console.log("The button was clicked!");
+        e.stopPropagation(); //Stops event to bubble up to the top of the tree...
+      });
+
+      box.addEventListener("click", function (e) {
+        console.log("The box was clicked!");
+      });
+
+      document.querySelector("#para").addEventListener("click", function (e) {
+        console.log("The para was clicked!");
+      });
+
+      document.querySelector("#span").addEventListener("click", function (e) {
+        console.log("The span was clicked!");
+      });
+    </script>
+  </body>
+</html>
