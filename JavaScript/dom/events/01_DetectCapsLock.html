@@ -1,0 +1,25 @@
+<!-- Detect Caps Lock Is On -->
+<html>
+  <head>
+    <title>Detect Caps Lock Is On</title>
+  </head>
+  <body>
+    <h1>Detect Caps Lock Is On</h1>
+    <input type="text" name="textField" id="textField" />
+    <br />
+    <div class="message"></div>
+    <script>
+      const textField = document.querySelector("#textField");
+      const message = document.querySelector(".message");
+
+      textField.addEventListener("keyup", (event) => {
+        if (event.getModifierState("CapsLock")) {
+          message.textContent = "Caps Lock is ON";
+          message.style.color = "red";
+        } else {
+          message.textContent = "";
+        }
+      });
+    </script>
+  </body>
+</html>
