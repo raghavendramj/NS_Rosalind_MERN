@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Check If the Document is Ready</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let para = document.getElementsByTagName("p")[0];
+        console.log("Para contents :- ", para);
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", (e) => {
+          // handle the click event
+          console.log("clicked");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Check If the Document is Ready</h1>
+    <div>Welcome to JavaScript</div>
+    <p>
+      To check if the document is ready and execute some code, you bind an event
+      listener to the DOMContentLoaded event of the document object:
+    </p>
+    <button id="btn">Click Me!</button>
+  </body>
+</html>
