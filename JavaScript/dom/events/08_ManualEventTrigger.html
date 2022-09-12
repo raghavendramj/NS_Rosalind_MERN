@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Trigger an Event</title>
+  </head>
+
+  <body>
+    <h1>Trigger an Event</h1>
+    <input
+      type="text"
+      name="username"
+      id="username"
+      placeholder="Enter Username"
+    />
+    <script>
+      const inputField = document.querySelector("#username");
+      inputField.addEventListener("keyup", (e) => {
+        console.log("Content Changed", e.currentTarget.value);
+      });
+
+      inputField.value = "Test";
+      triggerEvent(inputField, "keyup"); //Manually triggering an event!
+
+      function triggerEvent(el, type) {
+        if ("createEvent" in document) {
+          let customEvent = document.createEvent("HTMLEvents");
+          customEvent.initEvent(type, false, true);
+          el.dispatchEvent(customEvent);
+        }
+      }
+    </script>
+  </body>
+</html>

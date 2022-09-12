@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Create a One-Off Event Handler</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.querySelector(".btn");
+        btn.addEventListener(
+          "click",
+          () => {
+            console.log("Button Clicked!");
+          },
+          { once: true }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Check If the Document is Ready</h1>
+    <button class="btn">Subscribe</button>
+  </body>
+</html>

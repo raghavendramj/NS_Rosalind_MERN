@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Add and Remove an Event Handler</title>
+  </head>
+  <body>
+    <h1>Add and Remove an Event Handler</h1>
+    <button class="btn">Subscribe</button>
+    <script>
+      const btn = document.querySelector(".btn");
+      let clickHandler = (event) => {
+        console.log("Button Clicked!", event); 
+        btn.removeEventListener("click", clickHandler); //Detaching/Removing the event handler
+      };
+
+      btn.addEventListener("click", clickHandler);
+    </script>
+  </body>
+</html>

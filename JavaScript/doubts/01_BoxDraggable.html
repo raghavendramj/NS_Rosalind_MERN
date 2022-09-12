@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Drag Exercise</title>
+    <style>
+      /* body{
+        margin: 0;
+        padding: 0;
+    } */
+
+      div {
+        padding: 10px;
+        margin: 10px;
+        background-color: lightcoral;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+        float: left;
+      }
+
+      #boxDragged {
+        background-color: lightcoral;
+        color: antiquewhite;
+      }
+
+      #dropBox {
+        background-color: greenyellow;
+        width: 200px;
+        height: 200px;
+      }
+    </style>
+    <script>
+      function dragStart(e) {
+        e.dataTransfer = "move";
+        e.dataTransfer.setData("text", e.target.getAttribute("id"));
+        e.dataTransfer.setDragImage(e.target, 0, 0);
+        console.log("e.dataTransfer -> ", e.dataTransfer);
+        return true;
+      }
+
+      function dragEnter(e) {
+        console.log("e.dragEnter -> ", e);
+        e.preventDefault();
+      }
+      function dragOver(e) {
+        console.log("e.dragOver -> ", e);
+        return false;
+      }
+
+      function dragDrop(e) {
+        console.log("e.dragDrop -> ", e);
+        let src = e.dataTransfer.getData("text");
+        e.target.appendChild(document.getElementById(src));
+        e.stopPropagation();
+        return false;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Drag and Drop HTML 5 Demo</h2>
+    <p>Try to drag this red box around</p>
+    <div id="boxDragged" draggable="true" ondragstart="dragStart(event)">
+      Drag Me
+    </div>
+
+    <div
+      id="dropBox"
+      ondragenter="return dragEnter(event)"
+      ondragover="return dragOver(event)"
+      ondrop="return dragDrop(event)"
+    >
+      Drop Box
+    </div>
+  </body>
+</html>
