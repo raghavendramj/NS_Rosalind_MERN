@@ -32,5 +32,4 @@ getRegExMatches("badword test one two abadwords three", /^(badword)/gi);
 // badword test one two abadwords three
 
 //t1est 23 foo bar 304958 bar
-getRegExMatches("t1est 23 foo bar 304958 bar 567", /\d+/g
-); 
+getRegExMatches("t1est 23 foo bar 304958 bar 567", /\b\d+/g); 
