@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>JS BOM</title>
+  </head>
+  <body>
+    <h1>Javascript Browser's Object Model</h1>
+    <p>
+      The Browser Object Model (BOM) is the core of JavaScript on the web. The
+      BOM provides you with objects that expose the web browser’s functionality.
+    </p>
+
+    <a href="https://www.google.com/" target="_parent">Open Google</a>
+
+    <script>
+      let jsWindow2 = window.open(
+        "https://www.google.com",
+        "about",
+        "height=600,width=800"
+      );
+
+      setTimeout(() => {
+        // jsWindow2.resizeTo(600, 300);
+        jsWindow2.close();
+      }, 3000);
+    </script>
+  </body>
+</html>
