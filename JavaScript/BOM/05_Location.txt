@@ -1,0 +1,46 @@
+URL -> "http://localhost:8080/js/index.html?type=listing&page=2#title"
+
+location.href 
+location.href = "http://localhost:8080/js/index.html?type=listing&page=2#title"
+ 
+location.protocol
+'http:'  
+ 
+location.host
+"localhost:8080"
+
+location.port 
+"8080"
+
+location.pathname
+"/js/index.html"
+
+Location.search
+"?type=listing&page=2"
+
+location.hash
+"#title"
+
+location.origin
+"http://localhost:8080"
+
+
+assign() 
+location.assign('https://www.newtonschool.co');
+location.assign('https://www.newtonschool.co');
+
+
+location.href = "https://www.newtonschool.co";
+location.href.reload();
+location.replace('https://www.espncricinfo.com');
+
+Summary
+The Location object represents the current URL of a page. 
+It can be accessed via window.location or document.location.
+The Location object has a number of properties that represent the URL such as 
+protocol, host, pathname, and search.
+To manipulate the location, 
+you set its properties new values or use assign(), replace(), and reload() methods.
+
+
+
