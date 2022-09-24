@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Example</title>
+  </head>
+  <body>
+    <script>
+      let lang = prompt("What is your favorite programming language?");
+      let feedback =
+        lang.toLowerCase() === "javascript" ? `It's great!` : `It's ${lang}`;
+      alert(feedback);
+
+      let ageStr = prompt("How old are you?");
+      let age = Number(ageStr);
+      let ageFeedback =
+        age >= 16
+          ? "You're eligible to join."
+          : "You must be at least 16 year old to join.";
+      alert(ageFeedback);
+    </script>
+  </body>
+</html>
