@@ -1,0 +1,27 @@
+The JavaScript Navigator provides information about the web browser and its capabilities. 
+You can reference the Navigator object via the read-only window.navigator property.
+
+
+window.navigator.userAgent
+if(navigator.userAgent.includes('MSIE')) {
+    // IE, use specific features of IE
+} else {
+    // not IE
+}
+
+The Screen object provides the attributes of the screen on which the current window is being rendered.
+window.screen
+
+
+When you launch the web browser and open a new webpage, the web browser creates a new entry in its history stack.
+
+window.history
+window.history.back(); or history.back();
+
+history.forward();
+history.go(-1);
+
+To refresh the current page, you either pass 0 or no argument to the go() method:
+history.go(0);
+history.go(); //refresh the current page
+history.length
