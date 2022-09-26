@@ -1,5 +1,3 @@
-const ALL_POKEMONS_URL = "https://pokeapi.co/api/v2/pokemon?limit=50";
-
 function getPromise(URL) {
   let promise = new Promise(function (resolve, reject) {
     let req = new XMLHttpRequest();
@@ -21,6 +19,7 @@ function getPromise(URL) {
 //Example 1: Get 50 Pokémon's information:
 const consumer = () => {
   // We have discussed this function already!
+  const ALL_POKEMONS_URL = "https://pokeapi.co/api/v2/pokemon?limit=50";
   let pokemonPromise = getPromise(ALL_POKEMONS_URL);
 
   let loading = true;
@@ -51,3 +50,5 @@ const consumer = () => {
     })
     .catch((error) => console.log(error));
 };
+
+
