@@ -27,9 +27,9 @@ let songPromiseFunction = (songName) => {
 };
 
 //Consuing Code
-const songPromise = songPromiseFunction("");
+const songPromise = songPromiseFunction("Yeh dil mange more");
 
 songPromise.then(
-  (resp) => console.log("success -> ", resp),
-  (err) => console.log("Error occured! ", err)
+  (resp) => console.log("success -> ", resp), //SUCCESS CALLBACK
+  (err) => console.log("Error occured! ", err) //FAILURE CALLBACK
 );

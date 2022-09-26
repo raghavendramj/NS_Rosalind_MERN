@@ -5,13 +5,13 @@ function getUser(id, callBack) {
   callBack(raghav);
 }
 function getRepositories(username, callBack) {
-  console.log("Repos for username :- ", username);
+  console.log(`Extracting Repositories for ${username}....`);
   let repos = ["javascript", "java"];
   callBack(repos);
 }
 
 function getCommits(repositoryName, callBack) {
-  console.log("Commits for repository :- ", repositoryName);
+  console.log("Extracting Commits for " + repositoryName + "....");
   let commits = ["callbackhell.js", "clean.js"];
   callBack(commits);
 }

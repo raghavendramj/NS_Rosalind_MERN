@@ -2,7 +2,7 @@ function getUser(id) {
   return new Promise((resolve, reject) => {
     console.log("Reading an user from database !");
     let raghav = { id: id, username: "raghavendra" };
-    resolve(raghav);
+    resolve(raghav); //  --> then()
   });
 }
 
@@ -26,3 +26,14 @@ getUser(1)
   .then((user) => getRepositories(user.username))
   .then((repos) => getCommits(repos[0]))
   .then((commits) => console.log("Commits are :- ", commits));
+
+// getUser(1) //return you a promise -> resolves/rejects -> then is called
+//   .then((user) => {
+//     console.log("User:- ", user);
+//     return getRepositories(user.username);
+//   })
+//   .then((repos) => {
+//     console.log(repos);
+//     return getCommits(repos[0]);
+//   })
+//   .then((commits) => console.log("Commits are :- ", commits));
