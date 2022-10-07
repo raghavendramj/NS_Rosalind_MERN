@@ -1,0 +1,14 @@
+JavaScript Doubts :- 
+
+1. async and await
+	There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”. 
+	It’s surprisingly easy to understand and use.
+2. Fetch function
+3. Ajax
+4. mixins
+5. How browser works?
+	JavaScript Engine
+	Event Loop
+	Execution context
+	Browser APIs
+6. 
