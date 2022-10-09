@@ -1,0 +1,23 @@
+.question {
+  display: inline-block;
+  width: 98%;
+  height: 14vh;
+  margin: 6px;
+  margin-bottom: 26px;
+}
+.option {
+  display: inline-block;
+  width: 46.5%;
+  height: 10vh;
+  margin: 20px;
+  margin-bottom: 26px;
+}
+.pagination {
+  display: inline-block;
+  width: 47.3%;
+  height: 5vh;
+  margin: 12px;
+  position: fixed;
+  bottom: 0;
+  right: 0
+}

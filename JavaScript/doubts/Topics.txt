@@ -3,12 +3,26 @@ JavaScript Doubts :-
 1. async and await
 	There’s a special syntax to work with promises in a more comfortable fashion, called “async/await”. 
 	It’s surprisingly easy to understand and use.
-2. Fetch function
+2. Fetch API
+	The Fetch API interface allows web browser to make HTTP requests to web servers.	
+	Note:- No need for XMLHttpRequest anymore.
 3. Ajax
 4. mixins
 5. How browser works?
 	JavaScript Engine
+	-----------------------
+	function baz() {
+	  console.log( 'Hello from baz' );
+	}
+	function bar() {
+	  baz();
+	}
+	function foo() {
+	  bar();
+	}
+	foo(); 
+	-----------------------
 	Event Loop
 	Execution context
 	Browser APIs
-6. 
+		-> Fetch API

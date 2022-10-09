@@ -5,14 +5,16 @@
   <body>
     <div id="demo"></div>
     <button onclick="loadDocUsingAjax()">loadDocUsingAjax</button>
-    <br>
-    <br>
+    <br />
+    <br />
     <div id="forFetch"></div>
     <button onclick="loadDocUsingFetch()">loadDocUsingFetch</button>
-    <br>
-    <br>
+    <br />
+    <br />
     <div id="forFetchAsyncAwait"></div>
-    <button onclick="loadDocUsingFetchWithAsyncAndAwait()">loadDocUsingFetchWithAsyncAndAwait</button>
+    <button onclick="loadDocUsingFetchWithAsyncAndAwait()">
+      loadDocUsingFetchWithAsyncAndAwait
+    </button>
 
     <script>
       function loadDocUsingAjax() {
@@ -34,7 +36,8 @@
 
       async function loadDocUsingFetchWithAsyncAndAwait() {
         let response = await fetch("ajax_info.txt");
-        console.log(response);
+        let responseText = await response.text();
+        document.getElementById("forFetchAsyncAwait").innerHTML = responseText;
       }
     </script>
   </body>
