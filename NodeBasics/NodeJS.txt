@@ -1,0 +1,8 @@
+Node.js = Runtime Environment + JavaScript Library
+
+
+Features of Node.js
+	Asynchronous and Event Driven
+	Very Fast
+	
+This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.
