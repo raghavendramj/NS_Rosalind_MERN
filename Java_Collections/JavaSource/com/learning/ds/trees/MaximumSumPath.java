@@ -1,5 +1,5 @@
 package com.learning.ds.trees;
- 
+
 
 public class MaximumSumPath {
     public static void main(String[] args) {
@@ -23,6 +23,5 @@ public class MaximumSumPath {
         int right = Math.max(0, maxiPathSum(node.right, maxValue));
         maxValue[0] = Math.max(maxValue[0], left + right + node.data);
         return node.data + Math.max(left, right);
-
     }
 }

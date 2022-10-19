@@ -52,5 +52,49 @@ React Features
 	Virtual DOM
 	Simplicity
 	Performance
+	
+React JSX
+	 React components have a render function
+	 The render function specifies the HTML output of a React component. 
+	 JSX(JavaScript Extension), is a React extension which allows writing JavaScript code that looks like HTML
+	 In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax can co-exist with JavaScript/React code
+	 
+	 
+Sample Class component with .jsx 
+
+import React, { Component } from 'react';  
+class App extends Component{  
+   render(){  
+      return(  
+		<div> Welcome to React JS </div>
+		<p data-demoAttribute="test">Some dummy content </div>
+		 <h1 style={myStyle}>Newton School</h1>
+		<div className ="colorBlue"> Hello world </div>
+		
+	  );  
+   }  
+}  
+export default App;  
+
+JSX Attributes
+In JSX, we can specify attribute values in two ways:
+1. As String Literals: We can specify the values of attributes in double quotes:
+2. As Expressions: We can specify the values of attributes as expressions using curly braces {}:
 
 
+Some of the javascript properties are ..
+
+document.getElementById("test").className = 'blueColor';
+document.getElementById("test").style.fontSize = '60px';
+
+
+React Components
+
+A Component is considered as the core building blocks of a React application. It makes the task of building UIs much easier. Each component exists in the same space, but they work independently from one another and merge all in a parent component, which will be the final UI of your application.
+
+
+In ReactJS, we have mainly two types of components. They are
+	Functional Components
+	In React, function components are a way to write components that only contain a render method and don't have their own state.
+	They are simply JavaScript functions that may or may not receive data as parameters. We can create a function that takes props(properties) as input and returns what should be rendered.
+	Class Components
