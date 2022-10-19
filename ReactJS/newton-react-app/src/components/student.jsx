@@ -4,6 +4,7 @@ class Student extends Component {
     constructor() {
         super();
         this.state = {
+            showData: true,
             data: [
                 { id: 1, name: 'Saiman' },
                 { id: 2, name: 'Aparna' },
@@ -12,9 +13,15 @@ class Student extends Component {
             ]
         }
     }
+
+    toggleData = () => {
+        const curState = { ...this.state }; //Duplicate the state content
+        curState.showData = !curState.showData; // Do necessary modifications
+        this.setState(curState); //finally update the state using setState() method.
+    }
     render() {
-        return (
-            <div>
+        const data = this.state.showData ?
+            (<div>
                 <h1>Student Name Detail</h1>
                 <ul>
                     {this.state.data.map((nameObj) => {
@@ -23,7 +30,20 @@ class Student extends Component {
 
                 </ul>
             </div>
-        );
+            ) :
+            (<div>
+                <h1>No data to Show!</h1>
+            </div>
+            );
+
+        return (
+            <div>
+                {data}
+                <button onClick={this.toggleData}>Show Data</button>
+            </div>
+        )
+
+
     }
 }
 
