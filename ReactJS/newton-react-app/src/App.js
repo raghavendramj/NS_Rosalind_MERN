@@ -4,6 +4,8 @@ import WelcomeMessage from "./components/messasge";
 import React from "react";
 import Student from "./components/student";
 import Car from "./components/car";
+import Counter from "./components/counter";
+import Garage from "./components/garage";
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
       {/* <Product />  */}
       {/* <WelcomeMessage /> */}
       {/* < Student /> */}
-      <Car />
+      {/* <Car /> */}
+      {/* <Counter /> */}
+      <Garage />
     </React.Fragment>
   );
 }

@@ -108,3 +108,12 @@ React State
 	It can be set by using the setState() method and calling setState() method triggers UI updates. 
 	A state represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly. 
 	To set an initial state before any interaction occurs, we need to use the getInitialState() method.
+	
+	
+React Props
+	Props stand for "Properties." 
+	They are read-only components. 
+	It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. 
+	It gives a way to pass data from one component to other components. 
+	It is similar to function arguments. 
+	Props are passed to the component in the same way as arguments passed in a function.
