@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 // Component -> JSX
 class Product extends Component {
     render() {
