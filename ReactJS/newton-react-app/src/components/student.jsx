@@ -19,6 +19,7 @@ class Student extends Component {
         curState.showData = !curState.showData; // Do necessary modifications
         this.setState(curState); //finally update the state using setState() method.
     }
+    
     render() {
         const data = this.state.showData ?
             (<div>
