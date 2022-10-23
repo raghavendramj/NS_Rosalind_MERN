@@ -1,0 +1,36 @@
+Linked list Data Structure
+
+A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node. For example,
+
+Head -> |data|next| -->  |data|next| -->  |data|next| -->  |data|next| -->  |data|next| --> null
+
+Linked lists can be of multiple types: 
+singly, 
+doubly, and 
+circular linked list
+
+Representation of Linked List
+Each node consists:
+	A data item
+	An address of another node
+	
+class Node {
+	int data;
+	Node next;
+	public Node(int data){
+		this.next = null;
+		this.data = data;
+	}
+}
+
+Operations possible..
+1. insertion
+	Time Complexity -> O(n)
+	Space Complexity -> O(n)
+2. deletion
+	Time Complexity -> O(1)	
+	Space Complexity -> O(n)
+3. search
+	Time Complexity -> O(n)
+	Space Complexity -> O(n)
+
