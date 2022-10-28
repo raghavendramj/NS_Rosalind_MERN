@@ -1,0 +1,8 @@
+Find the middle of a given linked list
+Given a singly linked list, find the middle of the linked list. For example, if the given linked list is 1->2->3->4->5 then the output should be 3. 
+If there are even nodes, then there would be two middle nodes, we need to print the second middle element. 
+For example, if the given linked list is 1->2->3->4->5->6 then the output should be 4. 
+
+Detect loop in a linked list
+Given a linked list, check if the linked list has a loop or not. The below diagram shows a linked list with a loop. 
+
