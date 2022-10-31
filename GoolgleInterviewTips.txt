@@ -1,0 +1,54 @@
+Interview Process
+ - 5 "onsite" virtual Hangouts interviews - 3 x DS/Algo, 1 system design and 1 Googleyness and Leadership
+
+Interview Structure
+   - Duration: 45mins for coding rounds and 60mins for system design round
+   - Google Hangouts call (video is highly recommended)
+   - Done on "Virtual Interviewing Platform"
+   - Interviewer: Software Engineer from US
+   - Interview dates: Weekdays
+   - Timings: Evening: 7pm - 11pm IST
+
+Action Step
+   - Send me your preferred interview time slots
+   - Be confident and enjoy the preparation process. ALL THE BEST!!
+
+Concepts to Study for Coding rounds
+
+Arrays, Stacks, Trees (Binary Trees, Binary Search Trees, Heap), Linked
+List, Queue, Graphs, Union Find Data Structure, (DFS, BFS), Dynamic
+Programming, Recursion & Backtracking, Divide & Conquer, Dictionaries
+(Maps, Hash), Minimum spanning tree, String Algorithms: e.g. KMP.
+
+Great Videos & Links (recommended by candidates)
+
+   - Geeks for Geeks: The Complete Guide
+   <https://www.geeksforgeeks.org/google-interview-preparation-for-software-engineer-a-complete-guide/>
+
+  - Leetcode - Highly recommended (Premium Membership will strongly help)
+     https://leetcode.com/
+
+   - Prepare for Your Google Interview: Coding
+   <https://www.youtube.com/watch?v=6ZZX9iIgFoo&t=114s>
+
+   - How I Got Into Google As Software Engineer | My "Google Interview Experience" <https://www.youtube.com/watch?v=fNpQrYwxsvo> - Highly recommended
+
+   - How I prepared for coding interviews of Microsoft, Amazon, Google, Apple & Facebook <https://www.youtube.com/watch?v=HYK5lpkKBPo>
+
+   - My Preparation Journey for Google Interviews
+   <https://medium.com/swlh/my-preparation-journey-for-google-interviews-f41e2dc3cdf9>
+
+PREPARATION TIPS
+
+- 45 mins daily of Coding/DS&A prep is more than enough to knock it out of
+   the park in Coding rounds.
+- Leetcode & Geeks for Geeks are highly recommended. Practice mock
+   interviews on PRAMP.COM
+- Prep videos on Youtube 
+
+Coding
+   <https://www.youtube.com/watch?v=6ZZX9iIgFoo&list=PLllx_3tLoo4c_aR8RKOOnizL5LiUH02YF&index=13&t=0s>
+System Design
+   <https://www.youtube.com/watch?v=Gg318hR5JY0&list=PLllx_3tLoo4c_aR8RKOOnizL5LiUH02YF&index=11&t=18s>
+Leadership
+   <https://www.youtube.com/watch?v=2Cr3-et4xkI&list=PLllx_3tLoo4c_aR8RKOOnizL5LiUH02YF&index=10&t=0s>

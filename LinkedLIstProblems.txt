@@ -1,8 +1,89 @@
-Find the middle of a given linked list
-Given a singly linked list, find the middle of the linked list. For example, if the given linked list is 1->2->3->4->5 then the output should be 3. 
-If there are even nodes, then there would be two middle nodes, we need to print the second middle element. 
-For example, if the given linked list is 1->2->3->4->5->6 then the output should be 4. 
+1. Find the middle of a given linked list
+	Given a singly linked list, find the middle of the linked list. For example, if the given linked list is 1->2->3->4->5 then the output should be 3. 
+	If there are even nodes, then there would be two middle nodes, we need to print the second middle element. 
+	For example, if the given linked list is 1->2->3->4->5->6 then the output should be 4. 
 
-Detect loop in a linked list
-Given a linked list, check if the linked list has a loop or not. The below diagram shows a linked list with a loop. 
+2. Detect loop in a linked list
+	Given a linked list, check if the linked list has a loop or not. The below diagram shows a linked list with a loop. 
+	i. Detect loop in a linked list
+	ii. Remove loop in a linked list
+	iii. Find length of loop/cycle in given Linked List
+
+3. Reverse a linked list.
+	Given a linked list of size N. The task is to reverse every k nodes (where k is an input to the function) in the linked list.
+	
+4. Add two numbers represented by linked lists
+	Given two numbers represented by two lists, write a function that returns the sum in the form of a linked list.
+
+	Input: 
+	List1: 5->6->3 // represents number 563 
+	List2: 8->4->2 // represents number 842 
+	Output: 
+	Resultant list: 1->4->0->5 // represents number 1405 
+	Explanation: 563 + 842 = 1405
+
+	Input: 
+	List1: 7->5->9->4->6 // represents number 75946
+	List2: 8->4 // represents number 84
+	Output: 
+	Resultant list: 7->6->0->3->0// represents number 76030
+	Explanation: 75946+84=76030
+
+5. Rotate a Linked List
+	Given a singly linked list, The task is to rotate the linked list counter-clockwise by k nodes.
+	
+	Input: linked list = 10->20->30->40->50->60, k = 4
+	Output: 50->60->10->20->30->40. 
+	Explanation: k is smaller than the count of nodes in a linked list so (k+1 )th node i.e. 50 becomes the head node and 60’s next points to 10
+
+	Input: linked list = 30->40->50->60, k = 2
+	Output: 50->60->30->40. 
+	
+6. Program for Nth node from the end of a Linked List
+	Given a Linked List and a number N, write a function that returns the value at the Nth node from the end of the Linked List.
+
+7. Write a function to get the intersection point of two Linked Lists
+	There are two singly linked lists in a system. By some programming error, the end node of one of the linked lists got linked to the second list, forming an inverted Y-shaped list. Write a program to get the point where two linked lists merge. 
+
+	1 --> 2 --> 3 --> 4 --> 5 --> 6
+					7 --> 8-->	
+
+	List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5, 6);
+	List<Integer> list2 = Arrays.asList(7, 8, 9);
+	Node head1 = addToLinkedLIst(list1);
+	Node head2 = addToLinkedLIst(list2);
+	
+	Node toBeAttached = null;
+	Node temp1 = head1;
+	while(temp1!= null){
+		if(temp1.data == 4){
+			toBeAttached = temp1;
+		}
+	}
+	
+	Node temp2 = head2;
+	while(temp.next != null){
+		temp2. = temp2.next;
+	}
+	
+	temp2.next = toBeAttached;
+
+
+
+https://leetcode.com/explore/interview/card/top-interview-questions-medium/107/linked-list/784/
+
+
+
+8. Function to check whether given linkedlist is a palindrom or not?
+9. Remove duplicates from a
+	i. Sorted linked list
+	ii. Unsorted linked list
+	
+10. Swapping a nodes without swapping data.. (Swap references)
+11. Move last element to front of a given linked.
+12. Reverse a linked list using recursion.
+
+
+
+
 
