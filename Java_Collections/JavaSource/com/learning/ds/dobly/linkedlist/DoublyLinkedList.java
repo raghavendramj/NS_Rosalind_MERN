@@ -13,7 +13,8 @@ public class DoublyLinkedList {
         System.out.println("6th Node :- " + dummyNodeForRef.data);
         list.insertAtBeginning(74);
         list.printList();
-        list.insertBefore(dummyNodeForRef, 25);
+        list.insertBeforeReferenceNode(dummyNodeForRef, 25);
+        list.insertBeforeNode(dummyNodeForRef, 89);
         list.printList();
     }
 
@@ -77,7 +78,31 @@ public class DoublyLinkedList {
         return newNode;
     }
 
-    void insertBefore(Node nextNode, int newData) {
+    void insertBeforeNode(Node refNode, int newData) {
+        if (head == null) {
+            return;
+        }
+        Node temp = head;
+        //Case :- If refNode is not present in the list -> temp!= null
+        while (temp != null && temp.next != refNode) {
+            temp = temp.next;
+        }
+
+        if (temp.next == refNode) {
+            Node newNode = new Node(newData);
+            newNode.next = refNode;
+            newNode.prev = refNode.prev;
+            refNode.prev = newNode;
+            if (newNode.prev != null) {
+                newNode.prev.next = newNode;
+            } else {
+                head = newNode;
+            }
+        }
+        return;
+    }
+
+    void insertBeforeReferenceNode(Node nextNode, int newData) {
         if (nextNode == null)
             return;
 
