@@ -15,6 +15,7 @@ public class DoublyLinkedList {
         list.printList();
         list.insertBeforeReferenceNode(dummyNodeForRef, 25);
         list.insertBeforeNode(dummyNodeForRef, 89);
+        list.insertBeforeNode(new Node(455), 69);
         list.printList();
     }
 
@@ -88,16 +89,18 @@ public class DoublyLinkedList {
             temp = temp.next;
         }
 
-        if (temp.next == refNode) {
-            Node newNode = new Node(newData);
-            newNode.next = refNode;
-            newNode.prev = refNode.prev;
-            refNode.prev = newNode;
-            if (newNode.prev != null) {
-                newNode.prev.next = newNode;
-            } else {
-                head = newNode;
-            }
+        if (temp == null) {
+            System.out.println("Node is not part of linked list!");
+            return;
+        }
+        Node newNode = new Node(newData);
+        newNode.next = refNode;
+        newNode.prev = refNode.prev;
+        refNode.prev = newNode;
+        if (newNode.prev != null) {
+            newNode.prev.next = newNode;
+        } else {
+            head = newNode;
         }
         return;
     }
@@ -127,4 +130,27 @@ public class DoublyLinkedList {
         }
         return;
     }
+
+
+    Node deleteNode(Node toBeDeletedNode){
+        if (head == null || toBeDeletedNode == null)
+            return null;
+
+        if (head == toBeDeletedNode){
+            head = head.next;
+        }
+
+        if(toBeDeletedNode.next!= null){
+            toBeDeletedNode.next.prev = toBeDeletedNode.prev;
+        }
+
+        if(toBeDeletedNode.prev != null)
+            toBeDeletedNode.prev.next = toBeDeletedNode.next;
+
+        toBeDeletedNode = null;
+
+        return head;
+
+    }
+
 }
