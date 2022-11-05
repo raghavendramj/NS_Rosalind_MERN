@@ -1,0 +1,18 @@
+1. Reverse a Doubly Linked List
+Given a Doubly Linked List, the task is to reverse the given Doubly Linked List.
+
+
+2. Find pairs with given sum in doubly linked list
+Given a sorted doubly linked list of positive distinct elements, the task is to find pairs in a doubly-linked list whose sum is equal to given value x, without using any extra space? 
+
+
+Input : head : 1 <-> 2 <-> 4 <-> 5 <-> 6 <-> 8 <-> 9
+        x = 7
+Output: (6, 1), (5,2)
+
+The expected time complexity is O(n) and auxiliary space is O(1).
+
+
+3. Remove duplicates from an unsorted doubly linked list
+Given an unsorted doubly linked list containing n nodes. The problem is to remove duplicate nodes from the given list.
+
