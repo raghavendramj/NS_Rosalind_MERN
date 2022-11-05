@@ -7,7 +7,7 @@ public class DoublyLinkedList {
         DoublyLinkedList list = new DoublyLinkedList();
         list.appendNode(14);
         list.appendNode(12);
-        list.appendNode(35);
+        Node delNode = list.appendNode(35);
         list.appendNode(14);
         Node dummyNodeForRef = list.insertAtBeginning(62);
         System.out.println("6th Node :- " + dummyNodeForRef.data);
@@ -16,6 +16,8 @@ public class DoublyLinkedList {
         list.insertBeforeReferenceNode(dummyNodeForRef, 25);
         list.insertBeforeNode(dummyNodeForRef, 89);
         list.insertBeforeNode(new Node(455), 69);
+        list.printList();
+        list.deleteNode(delNode);
         list.printList();
     }
 
@@ -148,9 +150,9 @@ public class DoublyLinkedList {
             toBeDeletedNode.prev.next = toBeDeletedNode.next;
 
         toBeDeletedNode = null;
-
         return head;
-
     }
+
+
 
 }
