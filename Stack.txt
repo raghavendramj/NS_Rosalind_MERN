@@ -73,7 +73,7 @@ size()				O(1)
 
 
 Types of Stacks:
-	Register Stack: 
+	Register Stack:
 	Memory Stack:
 
 Applications of the stack:
@@ -82,7 +82,95 @@ Applications of the stack:
 	Forward and backward features in web browsers
 
 
-Implementation of Stack: 
+Implementation of Stack:
 	There are two ways to implement a stack
 		Using array
 		Using linked list
+
+Check for Balanced Brackets in an expression. (Done using stacks!)
+	Given an expression string exp, write a program to examine whether the pairs and the orders of “{“, “}”, “(“, “)”, “[“, “]” are correct in the given expression.
+		Input: exp = “[()]{}{[()()]()}”
+		Output: Balanced
+		Explanation: all the brackets are well-formed
+
+		Input: exp = “[(])”
+		Output: Not Balanced
+		Explanation: 1 and 4 brackets are not balanced because
+		there is a closing ‘]’ before the closing ‘(‘
+
+Convert an infix expression into a postfix expression
+Given an infix expression, convert it to the postfix expression. Assume that the infix expression is a string of tokens without any whitespace.
+For example,
+
+	Input:  A*B+C
+	Output: AB*C+
+
+	Input:  (A+B)*(C/D)
+	Output: AB+CD/*
+
+	Input:  A*(B*C+D*E)+F
+	Output: ABC*DE*+*F+
+
+	Input:  (A+B)*C+(D-E)/F+G
+	Output: AB+C*DE-F/+G+
+
+PEMDAS into them:
+	Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.
+
+Four cases can arise:
+
+Case 1:- If the current token is an opening bracket, '(', push it into the stack.
+Case 2:- If the current token is a closing bracket, ')', pop tokens from the stack until the corresponding opening bracket ‘(‘ is removed. 
+Append each operator at the end of the postfix expression.
+Case 3:- If the current token is an operand, append it at the end of the postfix expression.
+Case 4:- If the current token is an operator, push it on the top of the stack. Before doing that, first pop from the stack till we have a lower precedence operator on top, or the stack becomes empty. Append each operator at the end of the postfix expression.
+
+
+Input :- A*(B*C+D*E)+F  Output :- ABC*DE*+*F+
+Assignment :- Convert infix to prefix notation
+
+
+Queues :- 
+
+A queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.
+
+We define a queue to be a list in which all additions to the list are made at one end, and all deletions from the list are made at the other end.  The element which is first pushed into the order, the operation is first performed on that.
+
+Now, some of the implementations of queue operations are as follows: 
+Enqueue: Addition of an element to the queue. Adding an element will be performed after checking whether the queue is full or not. If rear < n which indicates that the array is not full then store the element at arr[rear] and increment rear by 1 but if rear == n then it is said to be an Overflow condition as the array is full.
+Dequeue: Removal of an element from the queue. An element can only be deleted when there is at least an element to delete i.e. rear > 0. Now, the element at arr[front] can be deleted but all the remaining elements have to shift to the left by one position in order for the dequeue operation to delete the second element from the left on another dequeue operation.
+Front: Get the front element from the queue i.e. arr[front] if the queue is not empty.
+Display: Print all elements of the queue. If the queue is non-empty, traverse and print all the elements from the index front to rear.
+
+
+
+LRU Cache Implementation
+We are given the total possible page numbers that can be referred. We are also given a cache (or memory) size (The number of page frames that the cache can hold at a time). The LRU caching scheme is to remove the least recently used frame when the cache is full and a new page is referenced which is not there in the cache
+	-> Doubly linked list and queue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
