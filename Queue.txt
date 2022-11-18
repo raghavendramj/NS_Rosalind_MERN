@@ -1,0 +1,26 @@
+LRU Cache Implementation
+We are given the total possible page numbers that can be referred. We are also given a cache (or memory) size (The number of page frames that the cache can hold at a time). The LRU caching scheme is to remove the least recently used frame when the cache is full and a new page is referenced which is not there in the cache. Please see the Galvin book for more details (see the LRU page replacement slide here).
+
+
+
+Merging Overlapping Intervals 
+Given a set of intervals, print all non-overlapping intervals after merging the overlapping intervals.
+
+Input:  {1, 5}, {2, 3}, {4, 6}, {7, 8}, {8, 10}, {12, 15}
+ 
+Output: Intervals after merging overlapping intervals are {1, 6}, {7, 10}, {12, 15}.
+
+
+The Celebrity Problem
+
+In a party of N people, only one person is known to everyone. Such a person may be present in the party, if yes, (s)he doesn’t know anyone in the party. We can only ask questions like “does A know B? “. Find the stranger (celebrity) in the minimum number of questions.
+
+Input:
+MATRIX = {
+				 {0, 0, 1, 0}, 
+				 {0, 0, 1, 0}, 
+				 {0, 0, 0, 0}, 
+				 {0, 0, 1, 0} 
+				 }
+Output: id = 2
+Explanation: The person with ID 2 does not know anyone but everyone knows him
