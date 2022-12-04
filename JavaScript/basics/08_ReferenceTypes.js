@@ -3,7 +3,7 @@ var citiesCopy = cities;
 console.log("Cities :- ", cities);
 console.log("citiesCopy :- ", citiesCopy);
 
-// cities = ["Bangalore", "Chennai", "Mumbai"];  //changes the reference of cities
+// cities = ["Bangalore", "Chennai", "Mumbai"];  //redeclation :- changes the reference of cities
 
 cities.pop();
 cities.pop();

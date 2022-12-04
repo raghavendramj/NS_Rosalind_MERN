@@ -1,3 +1,9 @@
+var x = 10; 
+console.log(window.x);
+
+let y = 20; 
+console.log(window.y);
+
 function varTest() {
   var number = 10;
   console.log("1. Outside block :- ", number);
@@ -21,3 +27,10 @@ function letTest() {
 }
 
 letTest();
+
+function hositingTest(){
+  console.log("1. :-", num);
+  var num = 10; 
+  console.log("3. :-", num);  
+}
+hositingTest();
