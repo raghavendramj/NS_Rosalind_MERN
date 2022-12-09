@@ -1,6 +1,6 @@
 import React from 'react';
 
-//Functionl Component!
+//Functionl Component! -> Stateless Component!
 function Tool(props) { 
     const { name, tool } = props; //Destructruing.
     return(

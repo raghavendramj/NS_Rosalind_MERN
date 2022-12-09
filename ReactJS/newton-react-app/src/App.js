@@ -11,13 +11,13 @@ import Employee from "./components/employee";
 function App() {
   return (
     <React.Fragment>
-      {/* <Product />  */}
+      ̥{/* <Product />  */}
       {/* <WelcomeMessage /> */}
       {/* < Student /> */}
       {/* <Car /> */}
       {/* <Counter /> */}
       {/* <Garage /> */}
-      <Employee name="Siman" propArray = {[6, 7, 8, 9]}/>
+      <Employee name="Siman" propArray={[6, 7, 8, 9]} booleanVal={true}/>
     </React.Fragment>
   );
 }

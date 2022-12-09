@@ -3,7 +3,7 @@ React is a declarative, efficient, and flexible JavaScript library for building 
 
 Why we use ReactJS?
 
-The main objective of ReactJS is to develop User Interfaces (UI) that improves the speed of the apps. It uses virtual DOM (JavaScript object), which improves the performance of the app. 
+The main objective of ReactJS is to develop User Interfaces (UI) that improves the speed of the apps. It uses virtual DOM (JavaScript object), which improves the performance of the app.
 
 The JavaScript virtual DOM is faster than the regular DOM. We can use ReactJS on the client and server-side as well as with other frameworks. It uses component and data patterns that improve readability and helps to maintain larger apps.
 
@@ -24,13 +24,13 @@ There are two ways to set up an environment for successful ReactJS application. 
 Using the npm command
 cd /reactproject/
 npm init -y
-npm install react react-dom --save  
-npm install webpack webpack-dev-server webpack-cli --save  
-npm install babel-core babel-loader babel-preset-env babel-preset-react babel-webpack-plugin --save-dev  
+npm install react react-dom --save
+npm install webpack webpack-dev-server webpack-cli --save
+npm install babel-core babel-loader babel-preset-env babel-preset-react babel-webpack-plugin --save-dev
 These files are index.html, App.js, main.js, webpack.config.js and, .babelrc.
 
-npm install react --save  
-npm install react-dom --save  
+npm install react --save
+npm install react-dom --save
 
 
 
@@ -38,7 +38,7 @@ Using the create-react-app command
 Install NodeJS and NPM
 Install React
 	cd /reactproject/
-	npm install -g create-react-app  
+	npm install -g create-react-app
 	create-react-app  newton-react-app
 
 
@@ -46,38 +46,38 @@ React Features
 	JSX
 		JSX stands for JavaScript XML.
 	Components
-		ReactJS is all about components. 
-		ReactJS application is made up of multiple components, and 
-		each component has its own logic and controls. 
+		ReactJS is all about components.
+		ReactJS application is made up of multiple components, and
+		each component has its own logic and controls.
 		These components can be reusable which help you to maintain the code when working on larger scale projects.
-		
+
 	One-way Data Binding
 	Virtual DOM
 	Simplicity
 	Performance
-	
+
 React JSX
 	 React components have a render function
-	 The render function specifies the HTML output of a React component. 
+	 The render function specifies the HTML output of a React component.
 	 JSX(JavaScript Extension), is a React extension which allows writing JavaScript code that looks like HTML
 	 In other words, JSX is an HTML-like syntax used by React that extends ECMAScript so that HTML-like syntax can co-exist with JavaScript/React code
-	 
-	 
-Sample Class component with .jsx 
 
-import React, { Component } from 'react';  
-class App extends Component{  
-   render(){  
-      return(  
+
+Sample Class component with .jsx
+
+import React, { Component } from 'react';
+class App extends Component{
+   render(){
+      return(
 		<div> Welcome to React JS </div>
 		<p data-demoAttribute="test">Some dummy content </div>
 		 <h1 style={myStyle}>Newton School</h1>
 		<div className ="colorBlue"> Hello world </div>
-		
-	  );  
-   }  
-}  
-export default App;  
+
+	  );
+   }
+}
+export default App;
 
 JSX Attributes
 In JSX, we can specify attribute values in two ways:
@@ -103,20 +103,56 @@ In ReactJS, we have mainly two types of components. They are
 	Class Components
 
 React State
-	The state is an updatable structure that is used to contain data or information about the component. 
-	The state in a component can change over time. 
-	The change in state over time can happen as a response to user action or system event. 
-	
-	A state must be kept as simple as possible. 
-	It can be set by using the setState() method and calling setState() method triggers UI updates. 
-	A state represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly. 
+	The state is an updatable structure that is used to contain data or information about the component.
+	The state in a component can change over time.
+	The change in state over time can happen as a response to user action or system event.
+
+	A state must be kept as simple as possible.
+	It can be set by using the setState() method and calling setState() method triggers UI updates.
+	A state represents the component's local state or information. It can only be accessed or modified inside the component or by the component directly.
 	To set an initial state before any interaction occurs, we need to use the getInitialState() method.
-	
-	
+
+
 React Props
-	Props stand for "Properties." 
-	They are read-only components. 
-	It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. 
-	It gives a way to pass data from one component to other components. 
-	It is similar to function arguments. 
+	Props stand for "Properties."
+	They are read-only components.
+	It is an object which stores the value of attributes of a tag and work similar to the HTML attributes.
+	It gives a way to pass data from one component to other components.
+	It is similar to function arguments.
 	Props are passed to the component in the same way as arguments passed in a function.
+
+
+Difference between States  and Props
+
+Props :- 
+	Props are read-only.	
+	Props are immutable.	
+	Props allow you to pass data from one component to other components as an argument.	
+	Props can be accessed by the child component.	
+	Props are used to communicate between components.	
+	Stateless component can have Props.	
+	Props make components reusable.	
+	Props are external and controlled by whatever renders the component.	
+	
+State :- 
+	State changes can be asynchronous.
+	State is mutable.
+	State holds information about the components.
+	State cannot be accessed by child components.
+	States can be used for rendering dynamic changes with the component.
+	Stateless components cannot have State.
+	State cannot make components reusable.
+	The State is internal and controlled by the React Component itself.
+
+
+Assignment :- 
+	Registration Page -> Component 1
+	Validation Page -> Component 2
+
+
+
+
+
+
+
+
