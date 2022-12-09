@@ -17,7 +17,7 @@ function App() {
       {/* <Car /> */}
       {/* <Counter /> */}
       {/* <Garage /> */}
-      <Employee name="Siman" />
+      <Employee name="Siman" propArray = {[6, 7, 8, 9]}/>
     </React.Fragment>
   );
 }
