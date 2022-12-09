@@ -46,7 +46,10 @@ React Features
 	JSX
 		JSX stands for JavaScript XML.
 	Components
-		ReactJS is all about components. ReactJS application is made up of multiple components, and each component has its own logic and controls. These components can be reusable which help you to maintain the code when working on larger scale projects.
+		ReactJS is all about components. 
+		ReactJS application is made up of multiple components, and 
+		each component has its own logic and controls. 
+		These components can be reusable which help you to maintain the code when working on larger scale projects.
 		
 	One-way Data Binding
 	Virtual DOM

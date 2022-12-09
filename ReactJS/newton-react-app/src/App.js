@@ -6,6 +6,7 @@ import Student from "./components/student";
 import Car from "./components/car";
 import Counter from "./components/counter";
 import Garage from "./components/garage";
+import Employee from "./components/employee";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* < Student /> */}
       {/* <Car /> */}
       {/* <Counter /> */}
-      <Garage />
+      {/* <Garage /> */}
+      <Employee name="Siman" />
     </React.Fragment>
   );
 }
