@@ -59,6 +59,12 @@ class Employee extends Component {
                                 {this.props.custFunc(4)}
                             </td>
                         </tr>
+                        <tr>
+                            <td>Email :- </td>
+                            <td>
+                                {this.props.email}
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </React.Fragment>
@@ -73,12 +79,16 @@ Employee.propTypes = {
     id: PropTypes.number.isRequired,
     custFunc: PropTypes.func,
     testString: PropTypes.string,
-    customProp : function(props, propName, componentName) {
-        //Validation message
+    email: function (props, propName, componentName) {
+        const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (!regex.test(props[propName])) {
+            return new Error(`Invalid prop ${propName} passed to ${componentName}. Expected a valid email address.`);
+        }
     }
 }
 
 Employee.defaultProps = {
+    // email: 'glad@me.com',
     title: 'Software Engineer!',
     propArray: [1, 2, 3, 4, 5],
     booleanVal: false,

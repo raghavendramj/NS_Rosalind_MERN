@@ -7,6 +7,7 @@ import Car from "./components/car";
 import Counter from "./components/counter";
 import Garage from "./components/garage";
 import Employee from "./components/employee";
+import AutoMobile from "./components/automobile";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       {/* <Car /> */}
       {/* <Counter /> */}
       {/* <Garage /> */}
-      <Employee name="Siman" propArray={[6, 7, 8, 9]} booleanVal={true}/>
+      {/* <Employee name="Siman" propArray={[6, 7, 8, 9]} booleanVal={true} email="raghav@gmail.com"/> */}
+      <AutoMobile />
     </React.Fragment>
   );
 }
