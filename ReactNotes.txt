@@ -199,6 +199,21 @@ They are:
 	componentWillUnmount()
 
 
+React Forms
+Creating Form
+React offers a stateful, 
+Reactive approach to build a form.
+
+The form is usually implemented by using controlled components.
+
+There are mainly two types of form input in React.
+	Uncontrolled component
+	 The DOM itself handles the form data. 
+	 Here, the HTML elements maintain their own state that will be updated when the input value changes. 
+	 . To write an uncontrolled component, you need to use a ref to get form values from the DOM.
+	
+	
+	Controlled component
 
 
 
