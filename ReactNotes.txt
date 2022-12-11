@@ -150,6 +150,53 @@ Assignment :-
 	Validation Page -> Component 2
 
 
+React Component Life-Cycle
+Every component creation process involves various lifecycle methods. 
+These lifecycle methods are termed as component's lifecycle.
+The lifecycle of the component is divided into four phases.
+
+They are:
+	Initial Phase
+	Mounting Phase
+	Updating Phase
+	Unmounting Phase
+
+1. Initial Phase :- 
+	The component starts its journey on a way to the DOM. 
+	In this phase, component contains the default Props and initial State
+	 These default properties are done in the constructor of a component. 
+	 
+	 getDefaultProps()
+	 getInitialState()
+
+2. Mounting Phase
+	In this phase, the instance of a component is created and inserted into the DOM.
+	
+	componentWillMount()
+		This is invoked immediately before a component gets rendered into the DOM. 
+		In the case, when you call setState() inside this method, the component will not re-render.
+		
+	componentDidMount()
+		This is invoked immediately after a component gets rendered and placed on the DOM. 
+		Now, you can do any DOM querying operations.
+
+	render()
+		This method is defined in each and every component. 
+		It is responsible for returning a single root HTML node element
+
+3. Updating Phase
+	 Here, we get new Props and change State. 
+	 This phase also allows to handle user interaction and provide communication with the components hierarchy.
+	 
+	 componentWillRecieveProps()
+	 shouldComponentUpdate()
+	 componentWillUpdate()
+	 render()
+	 componentDidUpdate()
+
+4. Unmounting Phase
+	when a component instance is destroyed and unmounted from the DOM. 
+	componentWillUnmount()
 
 
 
