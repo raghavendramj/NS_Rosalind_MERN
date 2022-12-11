@@ -10,6 +10,7 @@ import Employee from "./components/employee";
 import AutoMobile from "./components/automobile";
 import LifeCycleMethods from "./components/lifecyclemethods";
 import Registration from "./components/registration";
+import ControlledComponentForm from "./components/controlledcompoform";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       {/* <Employee name="Siman" propArray={[6, 7, 8, 9]} booleanVal={true} email="raghav@gmail.com"/> */}
       {/* <AutoMobile /> */}
       {/* <LifeCycleMethods /> */}
-      <Registration />
+      {/* <Registration /> */}
+      <ControlledComponentForm />
     </React.Fragment>
   );
 }
