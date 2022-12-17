@@ -6,18 +6,12 @@ function MultipleFormFields() {
 
     const handleChange = (event) => {
 
-        console.log("Event type :- ", event.target.type);
-        console.log("Event type :- ", event.target.checked);
-        // const targetType = event.target.type;
-        // const value = null;
-        // if (targetType === "checkbox") {
-        //     value = target.checked;
-        // } else { 
-        //     value = target.value;
-        // }   
-        const nameAttribute = event.target.name; //Key
-        // const valueAttibute = event.target.type === "checkbox" ? event.target.checked : event.target.value;
-        const valueAttibute = event.target.value;
+        //Key
+        const nameAttribute = event.target.name;
+        //Value
+        const valueAttibute = event.target.type === "checkbox" ? event.target.checked : event.target.value;
+        console.log("Key :- ", event.target.name);
+        console.log("Value :- ", event.target.value);
         setInputs(values => ({ ...values, [nameAttribute]: valueAttibute }))
     }
 
@@ -39,6 +33,7 @@ function MultipleFormFields() {
                         <td><label>Enter your Username :- </label></td>
                         <td>
                             <input type="text"
+                                name="username"
                                 value={inputs.username || ""}
                                 onChange={handleChange} />
                         </td>
@@ -78,9 +73,11 @@ function MultipleFormFields() {
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" 
-                        value={inputs.terms || false}
-                        onChange={handleChange} 
+                        <td><input
+                            type="checkbox"
+                            name="terms"
+                            checked={inputs.terms || ""}
+                            onChange={handleChange}
                         /> I accept all terms and conditions!</td>
                     </tr>
                     <tr>
@@ -110,7 +107,7 @@ function MultipleFormFields() {
                     <tr>
                         <td><label>Terms Checked :- </label></td>
                         <td>
-                            {inputs.terms || ""}
+                            {inputs.terms ? "true" : "false"}
                         </td>
                     </tr>
                     <tr>
