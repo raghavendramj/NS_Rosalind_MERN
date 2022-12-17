@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 function MultipleFormFields() {
 
-    const [inputs, setInputs] = useState({});
+    const [inputs, setInputs] = useState({ country: "India" });
 
     const handleChange = (event) => {
         const nameAttribute = event.target.name; //Key
@@ -17,11 +17,8 @@ function MultipleFormFields() {
     //age : 26; -> {"username" : "roger"}  -> Result =>  {username : 'roger', age: 26} 
 
     const handleSubmit = (event) => {
-     
         event.preventDefault();
-        for (let eachKey of inputs) {
-            console.log(`The ${eachKey} you have entered was :- ${inputs[eachKey]}`)
-        }
+        console.log(inputs);
     }
     return (
         <form onSubmit={handleSubmit}>
@@ -46,13 +43,13 @@ function MultipleFormFields() {
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Enter your Hobbies :- </label></td>
+                        <td><label>Select your country :- </label></td>
                         <td>
-                            <textarea
-                                name="hobbies"
-                                value={inputs.hobbies || ""}
-                                onChange={handleChange}
-                            ></textarea>
+                            <select name="country" value={inputs.country || ""} onChange={handleChange}>
+                                <option value="India">India</option>
+                                <option value="Australia">Australia</option>
+                                <option value="South Africa">South Africa</option>
+                            </select>
                         </td>
                     </tr>
                     <tr>
