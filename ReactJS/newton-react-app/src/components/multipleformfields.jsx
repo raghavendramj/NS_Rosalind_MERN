@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 function MultipleFormFields() {
 
     const [inputs, setInputs] = useState({ country: "India", gender: "Male", terms: false });
-
     const handleChange = (event) => {
-
         //Key
         const nameAttribute = event.target.name;
         //Value
@@ -20,6 +18,10 @@ function MultipleFormFields() {
 
     //Case 2:-  {"username" : "roger"} 
     //age : 26; -> {"username" : "roger"}  -> Result =>  {username : 'roger', age: 26} 
+
+    //Case 3:-  {username : 'roger', age: 26, country: "India"(Default Value)} 
+    //country : "Australia" -> {username : 'roger', age: 26, country: "India"}
+            //   -> Result =>  {username : 'roger', age: 26, country: "Australia"} 
 
     const handleSubmit = (event) => {
         event.preventDefault();

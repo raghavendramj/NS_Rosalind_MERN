@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { useState } from 'react';
 
 function SimpleFormControlled() {
+    //React Hook -> new State for  firstName -> ""
     const [firstName, setFirstName] = useState("");
     const [hobbies, setHobbies] = useState("");
 

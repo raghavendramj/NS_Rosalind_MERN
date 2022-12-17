@@ -1,6 +1,6 @@
 import "./App.css";
-import React from "react";
-import MultipleFormFields from "./components/multipleformfields";
+import React from "react"; 
+import ReactList from "./components/reactLists";
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
       {/* <ControlledComponentForm /> */}
       {/* <SimpleFormUC /> */}
       {/* <SimpleFormControlled /> */}
-      <MultipleFormFields />
+      {/* <MultipleFormFields /> */}
+      <ReactList />
     </React.Fragment>
   );
 }

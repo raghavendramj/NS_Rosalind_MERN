@@ -13,7 +13,7 @@ class SimpleFormUC extends React.Component {
         let changedName = event.target.value;
         let copiedState = { ...this.state };
         copiedState.value = changedName;
-        this.setState(copiedState);
+        this.setState(copiedState); //Updated the state using a new copy of state.
     }
 
     render() {
