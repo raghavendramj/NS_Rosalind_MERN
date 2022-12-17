@@ -2,11 +2,22 @@ import React, { useState } from 'react';
 
 function MultipleFormFields() {
 
-    const [inputs, setInputs] = useState({ country: "India" });
+    const [inputs, setInputs] = useState({ country: "India", gender: "Male", terms: false });
 
     const handleChange = (event) => {
+
+        console.log("Event type :- ", event.target.type);
+        console.log("Event type :- ", event.target.checked);
+        // const targetType = event.target.type;
+        // const value = null;
+        // if (targetType === "checkbox") {
+        //     value = target.checked;
+        // } else { 
+        //     value = target.value;
+        // }   
         const nameAttribute = event.target.name; //Key
-        const valueAttibute = event.target.value; //Value
+        // const valueAttibute = event.target.type === "checkbox" ? event.target.checked : event.target.value;
+        const valueAttibute = event.target.value;
         setInputs(values => ({ ...values, [nameAttribute]: valueAttibute }))
     }
 
@@ -28,7 +39,6 @@ function MultipleFormFields() {
                         <td><label>Enter your Username :- </label></td>
                         <td>
                             <input type="text"
-                                name="username"
                                 value={inputs.username || ""}
                                 onChange={handleChange} />
                         </td>
@@ -53,6 +63,27 @@ function MultipleFormFields() {
                         </td>
                     </tr>
                     <tr>
+                        <td><label>Gender :- </label></td>
+                        <td>
+                            <input type="radio"
+                                name="gender"
+                                value="Male"
+                                onChange={handleChange} /> Male
+                        </td>
+                        <td>
+                            <input type="radio"
+                                name="gender"
+                                value="Female"
+                                onChange={handleChange} /> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" 
+                        value={inputs.terms || false}
+                        onChange={handleChange} 
+                        /> I accept all terms and conditions!</td>
+                    </tr>
+                    <tr>
                         <td><label>Username Entered :- </label></td>
                         <td>
                             {inputs.username || ""}
@@ -65,9 +96,21 @@ function MultipleFormFields() {
                         </td>
                     </tr>
                     <tr>
-                        <td><label>Username Entered :- </label></td>
+                        <td><label>Country Selected :- </label></td>
                         <td>
-                            {inputs.hobbies || ""}
+                            {inputs.country || ""}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender Selected :- </label></td>
+                        <td>
+                            {inputs.gender || ""}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Terms Checked :- </label></td>
+                        <td>
+                            {inputs.terms || ""}
                         </td>
                     </tr>
                     <tr>
