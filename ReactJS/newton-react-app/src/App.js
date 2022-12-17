@@ -1,16 +1,6 @@
 import "./App.css";
-import Product from "./product";
-import WelcomeMessage from "./components/messasge";
 import React from "react";
-import Student from "./components/student";
-import Car from "./components/car";
-import Counter from "./components/counter";
-import Garage from "./components/garage";
-import Employee from "./components/employee";
-import AutoMobile from "./components/automobile";
-import LifeCycleMethods from "./components/lifecyclemethods";
-import Registration from "./components/registration";
-import ControlledComponentForm from "./components/controlledcompoform";
+import MultipleFormFields from "./components/multipleformfields";
 
 function App() {
   return (
@@ -25,7 +15,10 @@ function App() {
       {/* <AutoMobile /> */}
       {/* <LifeCycleMethods /> */}
       {/* <Registration /> */}
-      <ControlledComponentForm />
+      {/* <ControlledComponentForm /> */}
+      {/* <SimpleFormUC /> */}
+      {/* <SimpleFormControlled /> */}
+      <MultipleFormFields />
     </React.Fragment>
   );
 }
