@@ -6,16 +6,30 @@ import About from "./components/about";
 import Contact from "./components/contact";
 
 function App() {
+  const myHomeStyle = {
+    color: "red",
+    backgroundColor: "lightyellow",
+    padding: "8px",
+    textDecoration: "none",
+    border: "1px solid red",
+    borderRadius: "10px",
+    fontSize: "20px",
+    fontFamily: "Arial",
+  };
   return (
     <div>
       <h1>Welcome to React Application!</h1>
       <p>Lets explore more about React Routers and Links!</p>
       <ul>
-        <li>
-          <Link to="/home">Home</Link>
+        <li style={{ padding: "20px" }}>
+          <Link style={myHomeStyle} to="/home">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link style={{ color: "green" }} to="/about">
+            About
+          </Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
