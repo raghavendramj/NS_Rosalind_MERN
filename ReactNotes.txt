@@ -124,17 +124,17 @@ React Props
 
 Difference between States  and Props
 
-Props :- 
-	Props are read-only.	
-	Props are immutable.	
-	Props allow you to pass data from one component to other components as an argument.	
-	Props can be accessed by the child component.	
-	Props are used to communicate between components.	
-	Stateless component can have Props.	
-	Props make components reusable.	
-	Props are external and controlled by whatever renders the component.	
-	
-State :- 
+Props :-
+	Props are read-only.
+	Props are immutable.
+	Props allow you to pass data from one component to other components as an argument.
+	Props can be accessed by the child component.
+	Props are used to communicate between components.
+	Stateless component can have Props.
+	Props make components reusable.
+	Props are external and controlled by whatever renders the component.
+
+State :-
 	State changes can be asynchronous.
 	State is mutable.
 	State holds information about the components.
@@ -145,13 +145,13 @@ State :-
 	The State is internal and controlled by the React Component itself.
 
 
-Assignment :- 
+Assignment :-
 	Registration Page -> Component 1
 	Validation Page -> Component 2
 
 
 React Component Life-Cycle
-Every component creation process involves various lifecycle methods. 
+Every component creation process involves various lifecycle methods.
 These lifecycle methods are termed as component's lifecycle.
 The lifecycle of the component is divided into four phases.
 
@@ -161,33 +161,33 @@ They are:
 	Updating Phase
 	Unmounting Phase
 
-1. Initial Phase :- 
-	The component starts its journey on a way to the DOM. 
+1. Initial Phase :-
+	The component starts its journey on a way to the DOM.
 	In this phase, component contains the default Props and initial State
-	 These default properties are done in the constructor of a component. 
-	 
+	 These default properties are done in the constructor of a component.
+
 	 getDefaultProps()
 	 getInitialState()
 
 2. Mounting Phase
 	In this phase, the instance of a component is created and inserted into the DOM.
-	
+
 	componentWillMount()
-		This is invoked immediately before a component gets rendered into the DOM. 
+		This is invoked immediately before a component gets rendered into the DOM.
 		In the case, when you call setState() inside this method, the component will not re-render.
-		
+
 	componentDidMount()
-		This is invoked immediately after a component gets rendered and placed on the DOM. 
+		This is invoked immediately after a component gets rendered and placed on the DOM.
 		Now, you can do any DOM querying operations.
 
 	render()
-		This method is defined in each and every component. 
+		This method is defined in each and every component.
 		It is responsible for returning a single root HTML node element
 
 3. Updating Phase
-	 Here, we get new Props and change State. 
+	 Here, we get new Props and change State.
 	 This phase also allows to handle user interaction and provide communication with the components hierarchy.
-	 
+
 	 componentWillRecieveProps()
 	 shouldComponentUpdate()
 	 componentWillUpdate()
@@ -195,26 +195,38 @@ They are:
 	 componentDidUpdate()
 
 4. Unmounting Phase
-	when a component instance is destroyed and unmounted from the DOM. 
+	when a component instance is destroyed and unmounted from the DOM.
 	componentWillUnmount()
 
 
 React Forms
 Creating Form
-React offers a stateful, 
+React offers a stateful,
 Reactive approach to build a form.
 
 The form is usually implemented by using controlled components.
 
 There are mainly two types of form input in React.
 	Uncontrolled component
-	 The DOM itself handles the form data. 
-	 Here, the HTML elements maintain their own state that will be updated when the input value changes. 
+	 The DOM itself handles the form data.
+	 Here, the HTML elements maintain their own state that will be updated when the input value changes.
 	 . To write an uncontrolled component, you need to use a ref to get form values from the DOM.
-	
-	
-	Controlled component
 
 
+ Controlled component
+
+
+React Router
+	Routing is a process in which a user is directed to different pages based on their action or request
+	ReactJS Router is mainly used for developing Single Page Web Applications.
+	React Router is used to define multiple routes in the application.
+	When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
+
+React contains three different packages for routing. These are:
+	react-router: It provides the core routing components and functions for the React Router applications.
+	react-router-native: It is used for mobile applications.
+	react-router-dom: It is used for web applications design.
+
+	npm install react-router-dom --save
 
 
