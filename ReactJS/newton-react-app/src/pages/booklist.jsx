@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 
-function Students() {
+function BookList() {
     return (
         <React.Fragment>
-            <h1>Students Page!</h1>
+            <h1>Books List</h1>
             <table>
                 <thead>
                     <tr>
@@ -15,15 +15,15 @@ function Students() {
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td><Link to="/students/1">Raghava</Link></td>
+                        <td><Link to="/books/1">Harry Potter</Link></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><Link to="/students/2">Keshava</Link></td>
+                        <td><Link to="/books/2">Just like C</Link></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><Link to="/students/3">Madhava</Link></td>
+                        <td><Link to="/books/3">Learn JavaScript!</Link></td>
                     </tr>
                 </tbody>
             </table>
@@ -31,4 +31,4 @@ function Students() {
     );
 }
 
-export default Students;
+export default BookList;
