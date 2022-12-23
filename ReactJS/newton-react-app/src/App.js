@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { Link, Route, Routes, useRoutes } from "react-router-dom";
+import { Link, NavLink, Route, Routes, useRoutes } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Students from "./pages/students";
@@ -56,10 +56,24 @@ function App() {
       <nav>
         <ul>
           <li>
+            {/* replace is used to replace the earlier page! */}
+            {/* <Link to="/" replace>Home</Link> */}
+            {/* reloads the entire document! */}
+            {/* <Link to="/" reloadDocument>Home</Link> */}
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            {/* <Link to="/about">About</Link> */}
+            <NavLink
+              style={({ isActive }) => {
+                return isActive ? { color: "red", fontSize: "20px" } : {};
+              }}
+              to="/about"
+            >
+              {({ isActive }) => {
+                return isActive ? "Active About" : "About";
+              }}
+            </NavLink>
           </li>
           <li>
             <Link to="/students">Students</Link>
