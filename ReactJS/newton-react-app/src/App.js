@@ -12,6 +12,9 @@ import BookList from "./pages/booklist";
 function App() {
   return (
     <React.Fragment>
+      <Routes>
+        <Route path="/books" element={<h1>All about Books!</h1>} />
+      </Routes>
       <nav>
         <ul>
           <li>
@@ -33,12 +36,14 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/students" element={<Students />} />
         <Route path="/students/:id" element={<Student />} />
-        <Route path="/books">
-          <Route index element={<BookList />}></Route>
+
+        {/* This way we can go books component */}
+        {/* <Route path="/books"> */}
+         {/* <Route index element={<BookList />}></Route> */}
+        <Route path="/books" element={<BookList />}> 
           <Route path=":id" element={<Book />}></Route>
           <Route path="new" element={<NewBook />}></Route>
         </Route>
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </React.Fragment>

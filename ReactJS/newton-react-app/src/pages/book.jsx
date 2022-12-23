@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { useParams } from 'react-router-dom';
+import { useOutletContext, useParams } from 'react-router-dom';
 
 
 function Book() {
     const { id } = useParams();
+    const obj = useOutletContext();
     return (
         <React.Fragment>
             <h1>Book Component!</h1>
-            <p>Book Functional Component! and the id is :- {id}</p>
+            <p>Book Functional Component!</p>
+            <p>Id :- {id}</p>
+            <p>Author :- {obj.author}</p>
         </React.Fragment>
     );
 }

@@ -1,5 +1,5 @@
-import React, { PureComponent } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
 
 function BookList() {
     return (
@@ -25,9 +25,15 @@ function BookList() {
                         <td>3</td>
                         <td><Link to="/books/3">Learn JavaScript!</Link></td>
                     </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><Link to="/books/new">CreateNewBook</Link></td>
+                    </tr>
                 </tbody>
             </table>
-        </React.Fragment>
+            {/* This is used to share the data across all the nested routes */}
+            <Outlet context={{ author: "Random Fellow" }} />
+        </React.Fragment> 
     );
 }
 
