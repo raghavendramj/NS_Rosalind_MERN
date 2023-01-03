@@ -9,47 +9,49 @@ import NotFound from "./pages/notfound";
 import Book from "./pages/book";
 import NewBook from "./pages/newbook";
 import BookList from "./pages/booklist";
+import "./styles.css";
+import { BookRoutes } from "./pages/bookroutes";
 function App() {
-  let routes = useRoutes([
-    {
-      path: "/",
-      element: <Home />,
-    },
-    {
-      path: "about",
-      element: <About />,
-    },
-    {
-      path: "students",
-      element: <Students />,
-    },
-    {
-      path: "students/:id",
-      element: <Student />,
-    },
-    {
-      path: "books",
-      element: <BookList />,
-      children: [
-        {
-          path: ":id",
-          element: <Book />,
-        },
-        {
-          path: "new",
-          element: <NewBook />,
-        },
-      ],
-    },
-    {
-      path: "students",
-      element: <Students />,
-    },
-    {
-      path: "*",
-      element: <NotFound />,
-    },
-  ]);
+  // let routes = useRoutes([
+  //   {
+  //     path: "/",
+  //     element: <Home />,
+  //   },
+  //   {
+  //     path: "about",
+  //     element: <About />,
+  //   },
+  //   {
+  //     path: "students",
+  //     element: <Students />,
+  //   },
+  //   {
+  //     path: "students/:id",
+  //     element: <Student />,
+  //   },
+  //   {
+  //     path: "books",
+  //     element: <BookList />,
+  //     children: [
+  //       {
+  //         path: ":id",
+  //         element: <Book />,
+  //       },
+  //       {
+  //         path: "new",
+  //         element: <NewBook />,
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     path: "students",
+  //     element: <Students />,
+  //   },
+  //   {
+  //     path: "*",
+  //     element: <NotFound />,
+  //   },
+  // ]);
 
   return (
     <React.Fragment>
@@ -79,27 +81,30 @@ function App() {
             <Link to="/students">Students</Link>
           </li>
           <li>
-            <Link to="/books">BookList</Link>
+            {/* <Link to="/books">BookList</Link> */}
+            <NavLink to="/books">BooksList</NavLink>
           </li>
         </ul>
       </nav>
-      {routes}
+      {/* This is used if we want to make static content for the matching route */}
       {/* <Routes>
         <Route path="/books" element={<h1>All about Books!</h1>} />
-      </Routes>
-     
+      </Routes> */}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/students" element={<Students />} />
-        <Route path="/students/:id" element={<Student />} /> 
-        
-        <Route path="/books" element={<BookList />}>
+        <Route path="/students/:id" element={<Student />} />
+
+        {/* <Route path="/books" element={<BookList />}>
           <Route path=":id" element={<Book />}></Route>
           <Route path="new" element={<NewBook />}></Route>
-        </Route>
+        </Route> */}
+
+        <Route path="/books/*" element={<BookRoutes />}></Route>
         <Route path="*" element={<NotFound />} />
-      </Routes> */}
+      </Routes>
     </React.Fragment>
   );
 }

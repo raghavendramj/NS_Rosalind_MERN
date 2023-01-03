@@ -235,6 +235,82 @@ Adding Navigation using Link component
 	When we click on any of that particular Link, it should load that page which is associated with that path without reloading the web page. 
 	< Link> 
 	
+	Configuring The Router
+		BrowserRouter 
 	
+	index.html
+		import React from "react"
+		import ReactDOM from "react-dom/client"
+		import App from "./App"
+		import { BrowserRouter } from "react-router-dom"
+		const root = ReactDOM.createRoot(document.getElementById("root"))
+		root.render(
+		  <React.StrictMode>
+			<BrowserRouter>
+			  <App />
+			</BrowserRouter>
+		  </React.StrictMode>
+		)
+		
+	app.jsx
+	export function App(){
+		 return (
+			<React.Fragment>
+				<nav>
+					<ul>
+						<li><Link to="/"> Home</li>
+						<li><Link to="/"> Books</li>
+					</ul>
+				</nav>
+					<Routes>
+					  <Route path="/" element={<Home />} />
+					  <Route path="/books" element={<BookList />} />
+					  <Route path="/books/:id" element={<Book />} />
+					  <Route path="/books/new`" element={<NewBook />} />
+					 <Route path="*" element={<NotFound />} />
+					</Routes>
+			</React.Fragment> 
+	}
+
+	book.jsx
+		import { useParams } from "react-router-dom";
+		export function Book() {
+		  const { id } = useParams()
+
+		  return (
+			<h1>Book {id}</h1>
+		  )
+		} 
+			
+	Nested Routes
+		<Routes>
+		  <Route path="/" element={<Home />} />
+		  <Route path="/books">
+			<Route index element={<BookList />} />
+			<Route path=":id" element={<Book />} />
+			<Route path="new" element={<NewBook />} />
+		  </Route>
+		  <Route path="*" element={<NotFound />} />
+		</Routes>
+
+Create a router
+	-> index.html
+		-> BrowserRouter > App
+	-> app.jsx
+			-> Routes
+				-> Home
+				-> NotFound
+				-> Child route 
+	-> childroutes.jsx
+			-> EmployeeList
+			-> Employee
+			-> NewEmployee
+	-> Employee.jsx
+		-> parameter -> id
+	-> newEmployee.jsx
+		-> parameter -> name 
+	-> shared data across child routes
+		-> author
+		
 React CSS
 
