@@ -4,6 +4,7 @@ import { JupiterAbout } from './jupAbout';
 import { JupiterContact } from './jupcontact';
 import { JupiterHome } from './juphome';
 import { JupNotFound } from './jupnotfound';
+import { JupiterSearch } from './jupsearch';
 
 function Jupiter() {
     const navigate = useNavigate();
@@ -11,14 +12,16 @@ function Jupiter() {
         <React.Fragment>
             <p>Welcome to the website!</p>
             <nav>
-                 {/* <li><NavLink to="/home">Home</NavLink></li>
+                <li><NavLink to="/home">Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/search">Search Params</NavLink></li>
                 <li>
                     <NavLink to="/contacts" style={({ isActive }) => {
                         return isActive ? { color: "red", fontSize: "30px" } : {}
                     }}>
                         Contacts
                     </NavLink>
-                </li> */}
+                </li>
                 <li><button onClick={() => navigate("/about")}>About</button></li>
             </nav>
             <Routes>
@@ -26,6 +29,7 @@ function Jupiter() {
                 <Route path="/home" exact element={<JupiterHome />}></Route>
                 <Route path="/contacts" exact element={<JupiterContact />}></Route>
                 <Route path="/about" exact element={<JupiterAbout />}></Route>
+                <Route path="/search" element={<JupiterSearch />}></Route>
                 <Route path="/*" element={<JupNotFound />}></Route>
             </Routes>
         </React.Fragment >
