@@ -313,4 +313,9 @@ Create a router
 		-> author
 		
 React CSS
-
+	There are five distinct ways in which you can style and write CSS in React:
+		Inline styles in React
+		Reusable variables
+		Using external StyleSheet
+		CSS Modules
+		CSS-in-JS
