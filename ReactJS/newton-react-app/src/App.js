@@ -1,8 +1,9 @@
 import "./App.css"; 
-import StylesExample2 from "./components/stylesexample02";
-import "./styles.css";
+ 
+import StylesExample3 from "./components/stylesexample03";
+
 function App() {
-  return <StylesExample2 />;
+  return <StylesExample3 />;
 }
 
 export default App;

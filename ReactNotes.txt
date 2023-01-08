@@ -293,6 +293,19 @@ Adding Navigation using Link component
 		  <Route path="*" element={<NotFound />} />
 		</Routes>
 
+
+<React.Fragment>
+	<Link to="/home">Home</Link>
+	<Link to="/about">About</Link>
+	<BrowserRouter>
+		<Routes>
+			<Route element={<Home />}> </Route>
+			<Route element={<About />}> </Route>
+		</Routes> 
+	</BrowserRouter>
+</React.Fragment>
+
+
 Create a router
 	-> index.html
 		-> BrowserRouter > App
