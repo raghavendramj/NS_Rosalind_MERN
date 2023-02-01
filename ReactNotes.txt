@@ -344,6 +344,10 @@ useState
 The React useState Hook allows us to track state in a function component
 useEffect
 The useEffect Hook allows you to perform side effects in your components.
+useRef
+The useRef Hook allows you to persist values between renders.
+
+
 
 
 
