@@ -1,0 +1,48 @@
+Introduction to React
+	-> History of React
+	-> UI Library
+	-> Virtual DOM
+		Real DOM -> copies state -> 
+			Virtual DOM -> copies state -> Copy of Virtual DOM -> compares with -> Elements to updated -> Update the Virtual DOM
+		Real DOM -> copies state -> 
+			Virtual DOM -> find change and update -> Update Virtual DOM -> find the difference in both states-> -> -> Elements to updatedUpdate the Virtual DOM
+		
+		Virtual DOM solves the problem of re-rendering the DOM again and finding the element to have changed while traversing a large DOM tree
+		Virtual DOM is not visible on the UI, whereas Real DOM is visible. 
+		
+Advantages of React
+		SPA -> Single Page Application development
+		Server side as well as client side rendering
+
+Babel is a JavaScript compiler that converts EcmaScript6 code into EcmaScrip5 code, which can be run on a browser.
+
+Webpack 
+	-> minification/bundling
+	
+	batch size = 6 
+	1 webpage -> 10 stylesheets + 20 script files  = 31 files
+	31/6  -> 6 requests
+	
+	1 webpage + 1 bundled stylesheet + 1 bundled script
+	3 files -> 1 batch
+	3/6 -> 1 requests
+	
+	minification shortens a file’s contents without changing its meaning. 
+
+ESLint is one such lint that provides linting utility for JavaScript and is being commonly used by React developers.
+ESLint helps you to follow the coding guidelines and principles such that you make fewer errors and mistakes
+
+var name = "newton";
+var name = "newtonschool";
+
+JSX
+---
+<div id="module">
+   <p>ReactJS</p>
+</div>
+
+JS
+--
+React.createElement("div", {id: "module"},
+   React.createElement("p", null, "ReactJS")
+);

@@ -1,10 +1,15 @@
+import React from "react";
 import "./App.css"; 
- 
-import StylesExample3 from "./components/stylesexample03";
-import StylesExample4 from "./components/stylesexample04";
+import UseEffectHook from "./hooks/useeffect";
+import UseStateHook from "./hooks/usestate";
+ import UserComponent1 from "./hooks/usecontextsolution";
 
 function App() {
-  return <StylesExample4 />;
+  return <React.Fragment>
+    <UseStateHook />
+    <UseEffectHook /> 
+    <UserComponent1 />
+  </React.Fragment>;
 }
 
 export default App;

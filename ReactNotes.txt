@@ -332,3 +332,23 @@ React CSS
 		Using external StyleSheet
 		CSS Modules
 		CSS-in-JS
+		
+		
+React Hooks
+-----------------
+Version supported:- React in version 16.8
+
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+useState
+The React useState Hook allows us to track state in a function component
+useEffect
+The useEffect Hook allows you to perform side effects in your components.
+
+
+
+
+
+
+
+
