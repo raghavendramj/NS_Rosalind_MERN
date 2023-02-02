@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-
-import UseReducerHook from "./hooks/usereducer";
+import UseEffectWithHook from "./hooks/UseCallBackWithHook";
+import UseCallBackWithoutHook from "./hooks/usecallbackWithoutHook";
 
 function App() {
   return (
@@ -10,7 +10,9 @@ function App() {
     <UseEffectHook /> 
     <UserComponent1 />
     <UseRefHook /> */}
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
+      {/* <UseCallBackWithoutHook /> */}
+      <UseEffectWithHook />
     </React.Fragment>
   );
 }
