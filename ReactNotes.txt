@@ -347,6 +347,11 @@ The useEffect Hook allows you to perform side effects in your components.
 useRef
 The useRef Hook allows you to persist values between renders.
 
+useReducer 
+The useReducer Hook is similar to the useState Hook.
+useReducer(<reducer>, <initialState>)
+The reducer function contains your custom state logic and the initialState can be a simple value but generally will contain an object.
+The useReducer Hook returns the current state and a dispatch method.
 
 
 

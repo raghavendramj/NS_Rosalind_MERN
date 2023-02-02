@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
- 
+
 function UseRefHook() {
     const [inpValue, setInpValue] = useState("");
     const refCount = useRef(0); //const refCount = {current: 0} -> refCount.current.
@@ -15,10 +15,8 @@ function UseRefHook() {
                 value={inpValue}
                 onChange={(event) => setInpValue(event.target.value)}
             />
-
             <h1>Rendered Reference Count :- {refCount.current}</h1>
         </>
-
     );
 }
 
