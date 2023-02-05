@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import UseCallbackHook from "./hooks/usecallbackhook";
 
 import UseMemoHook from "./hooks/usememo";
 
@@ -13,7 +14,8 @@ function App() {
       {/* <UseReducerHook /> */}
       {/* <UseCallBackWithoutHook /> */}
       {/* <UseEffectWithHook /> */}
-      <UseMemoHook />
+      {/* <UseMemoHook /> */}
+      <UseCallbackHook />
     </React.Fragment>
   );
 }
