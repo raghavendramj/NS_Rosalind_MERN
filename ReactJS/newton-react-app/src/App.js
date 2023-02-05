@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import UseEffectWithHook from "./hooks/UseCallBackWithHook";
-import UseCallBackWithoutHook from "./hooks/usecallbackWithoutHook";
+
+import UseMemoHook from "./hooks/usememo";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
     <UseRefHook /> */}
       {/* <UseReducerHook /> */}
       {/* <UseCallBackWithoutHook /> */}
-      <UseEffectWithHook />
+      {/* <UseEffectWithHook /> */}
+      <UseMemoHook />
     </React.Fragment>
   );
 }

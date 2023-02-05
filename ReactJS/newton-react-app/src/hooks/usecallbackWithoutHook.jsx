@@ -1,8 +1,9 @@
 import { useState } from "react";
 
+const funCount = new Set();
+
 function UseCallBackWithoutHook() {
 
-    const funCount = new Set();
 
     const [count, setCount] = useState(0);
     const [number, setNumber] = useState(0);

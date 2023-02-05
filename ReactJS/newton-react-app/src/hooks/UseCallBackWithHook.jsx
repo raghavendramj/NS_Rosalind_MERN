@@ -1,8 +1,8 @@
 import { useCallback, useState } from "react";
 
-function UseEffectWithHook() {
+const funCount = new Set();
 
-    const funCount = new Set();
+const UseEffectWithHook = () => {
 
     const [count, setCount] = useState(0);
     const [number, setNumber] = useState(0);
