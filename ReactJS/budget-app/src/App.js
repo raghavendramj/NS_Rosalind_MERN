@@ -23,7 +23,11 @@ function App() {
         </Button>
       </Stack>
       <div style={divStyle}>
-        <BudgetCard cardName="Entertainment" amount={200} max={1000}></BudgetCard>
+        <BudgetCard
+          cardName="Entertainment"
+          amount={1100}
+          max={1000}
+        ></BudgetCard>
       </div>
     </Container>
   );
