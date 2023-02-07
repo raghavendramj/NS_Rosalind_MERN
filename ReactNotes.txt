@@ -352,10 +352,42 @@ The useReducer Hook is similar to the useState Hook.
 useReducer(<reducer>, <initialState>)
 The reducer function contains your custom state logic and the initialState can be a simple value but generally will contain an object.
 The useReducer Hook returns the current state and a dispatch method.
+ 
+Project Ideas :- 
+-----------------------------
+1. Create A Budget App
+2. Create A Messaging App
+3. Build A Google Drive Clone With Firebase
 
+Functionality we are focusing :-
 
+Create A Budget App
+Adding Expense
+Viewing expense
+Removing expense
+Categorizing expense
+View Totals
 
+ Steps followed :- 
+ 
+	create-react-app  budget-app
+ 
+	https://react-bootstrap.github.io/getting-started/introduction/
+	npm install react-bootstrap bootstrap
+	
+	CSS :-
+	{/* The following line can be included in your src/index.js or App.js file */}
+	import 'bootstrap/dist/css/bootstrap.min.css';
 
+	Usage :- App.js 
+		import Button from 'react-bootstrap/Button';
+		or 
+		import {Button} from 'react-bootstrap';
+	
+	styles.css
+	import 'bootstrap/dist/css/bootstrap.min.css';
+	
+	npm install uuid 
 
 
 
