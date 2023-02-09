@@ -6,14 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 
 // Importing the Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useBudgets } from "./contexts/budgetContext";
+import { BudgetsProvider } from "./contexts/BudgetsContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <useBudgets>
+    <BudgetsProvider>
       <App />
-    </useBudgets>
+    </BudgetsProvider>
   </React.StrictMode>
 );
 

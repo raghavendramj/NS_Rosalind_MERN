@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { v4 as uuidV4 } from "uuid";
+import useLocalStorage from "../hooks/useLocalStograge";
 
 const BudgetsContext = React.createContext();
 
@@ -7,9 +8,7 @@ export function useBudgets() {
   return useContext(BudgetsContext);
 }
 
-
-
-// Categorized budgets -> 
+// Categorized budgets ->
 // 1. Entertainment($1000) -> incur expenses -> [expense1, expense2, ...]
 
 // Lets say $1000 Budget - Entertainment
@@ -17,37 +16,37 @@ export function useBudgets() {
 // $350 expense2 -> drawing board
 // Total expense -> $450 / $1000
 // Total_Expense -> Categorization..
-// 0 t0 500 (Acceptable -> primary class) 
-// 500 t0 750 (Little above than median -> warning class) 
+// 0 t0 500 (Acceptable -> primary class)
+// 500 t0 750 (Little above than median -> warning class)
 // 750+ (Close to max budget -> Danger class)
 
 // 2. Study($500) -> incur expenses -> [expense1, expense2, ...]
 // 3. Other($1000)-> incur expenses -> [expense1, expense2, ...]
 
-//Budget Object! ->  
+//Budget Object! ->
 // {
-//     id: 1 
+//     id: 1
 //     name: Entertainment
 //     max: $1000
 // }
 
 //Expense Object!
 // {
-//     id: 1 
-//     budgetId: 1 
-//     amount: 100 
+//     id: 1
+//     budgetId: 1
+//     amount: 100
 //     description: sketch pens
-// }, 
+// },
 // {
 //     id: 2
-//     budgetId: 1 
-//     amount: 350 
+//     budgetId: 1
+//     amount: 350
 //     description: drawing board
 // }
 
 export const BudgetsProvider = ({ children }) => {
-  const [budgets, setBudgets] = useState([]);
-  const [expenses, setExpenses] = useState([]);
+  const [budgets, setBudgets] = useLocalStorage("budgets", []);
+  const [expenses, setExpenses] = useLocalStorage("expenses", []);
 
   //Fetch expenses incurred for a specific budget -> Ex. Entertainment
   function getBudgetExpense(budgetId) {
