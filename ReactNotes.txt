@@ -382,10 +382,7 @@ View Totals
 	Usage :- App.js 
 		import Button from 'react-bootstrap/Button';
 		or 
-		import {Button} from 'react-bootstrap';
-	
-	styles.css
-	import 'bootstrap/dist/css/bootstrap.min.css';
+		import {Button} from 'react-bootstrap'; 
 	
 	npm install uuid 
 

@@ -29,7 +29,7 @@ export default function BudgetCard({ cardName, amount, max, gray }) {
                 ></ProgressBar>
                 <Stack direction='horizontal' gap="2" className="mt-4">
                     <Button variant="outline-primary">
-                        Add Budget
+                        Add Expense
                     </Button>
                     <Button variant="outline-secondary">
                         View Expenses
@@ -47,7 +47,5 @@ function getProgressBarVariant(amount, max) {
         return 'primary';
     if (ratio < 0.75)
         return 'warning';
-    return 'danger';
-
-
+    return 'danger'; 
 }

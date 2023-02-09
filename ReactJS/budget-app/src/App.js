@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Button, Container, Stack } from "react-bootstrap";
 import BudgetCard from "./components/budget";
@@ -25,7 +24,7 @@ function App() {
       <div style={divStyle}>
         <BudgetCard
           cardName="Entertainment"
-          amount={1100}
+          amount={880}
           max={1000}
         ></BudgetCard>
       </div>
