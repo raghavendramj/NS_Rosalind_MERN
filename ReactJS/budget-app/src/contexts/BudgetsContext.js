@@ -60,13 +60,14 @@ export const BudgetsProvider = ({ children }) => {
     });
   }
 
-  //Adds a new category of budget
-  function addBudget(name, max) {
+  //Adds a new category of budget -> destructured object
+  function addBudget({name, max}) { 
     setBudgets((prevBudgets) => {
       if (prevBudgets.find((budget) => budget.name === name)) {
         return prevBudgets;
       }
-      return [...prevBudgets, { id: uuidV4(), name, max }];
+      const newBudgets = [...prevBudgets, { id: uuidV4(), name, max }]; 
+      return newBudgets;
     });
   }
 

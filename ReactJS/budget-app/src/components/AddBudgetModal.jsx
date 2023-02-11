@@ -7,12 +7,13 @@ export default function AddBudgetModal({ show, handleClose }) {
     const maxRef = useRef()
     const { addBudget } = useBudgets()
     function handleSubmit(e) {
-        e.preventDefault()
+        e.preventDefault();
+        //Writing to context scope to make sure other components are able to see this change
         addBudget({
             name: nameRef.current.value,
             max: parseFloat(maxRef.current.value),
         })
-        handleClose()
+        handleClose();
     }
 
     return (
@@ -33,7 +34,7 @@ export default function AddBudgetModal({ show, handleClose }) {
                             type="number"
                             required
                             min={0}
-                            step={0.01}
+                            step={.01}
                         />
                     </Form.Group>
                     <div className="d-flex justify-content-end">
