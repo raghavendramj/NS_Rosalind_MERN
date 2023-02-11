@@ -3,11 +3,7 @@ import { Button, Card, ProgressBar, Stack } from 'react-bootstrap';
 import { currencyFormatter } from '../utils';
 
 export default function BudgetCard({ cardName, amount, max, gray }) {
-    console.log("cardName -> ", cardName);
-    console.log("amount -> ", amount);
-    console.log("max -> ", max);
     const classNames = [];
-
     if (amount > max) {
         classNames.push('bg-danger', 'bg-opacity-10')
     } else if (gray) {
@@ -26,7 +22,7 @@ export default function BudgetCard({ cardName, amount, max, gray }) {
                     className='rounded-pill'
                     variant={getProgressBarVariant(amount, max)}
                     min={0}
-                    now={0}
+                    now={amount}
                     max={max}
                 ></ProgressBar>
                 <Stack direction='horizontal' gap="2" className="mt-4">
