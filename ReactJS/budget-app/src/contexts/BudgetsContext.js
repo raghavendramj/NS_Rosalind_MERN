@@ -3,7 +3,7 @@ import { v4 as uuidV4 } from "uuid";
 import useLocalStorage from "../hooks/useLocalStograge";
 
 const BudgetsContext = React.createContext();
-export const UNCATEGORIZED_BUDGET_ID = "uncategorized";
+export const UNCATEGORIZED_BUDGET_ID = "Uncategorized";
 
 export function useBudgets() {
   return useContext(BudgetsContext);
@@ -15,6 +15,7 @@ export const BudgetsProvider = ({ children }) => {
 
   //Fetch expenses incurred for a specific budget -> Ex. Entertainment
   function getBudgetExpense(budgetId) {
+    console.log("")
     return expenses.filter((expense) => {
       return expense.budgetId === budgetId;
     });
@@ -40,7 +41,7 @@ export const BudgetsProvider = ({ children }) => {
 
   //Deleting a expense
   function deleteExpense({ id }) {
-    setBudgets((prevExpenses) => {
+    setExpenses((prevExpenses) => {
       return prevExpenses.filter((expense) => expense.id !== id);
     });
   }

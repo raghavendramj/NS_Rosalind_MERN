@@ -14,17 +14,21 @@ export default function BudgetCard({ cardName, amount, max, gray }) {
             <Card.Body>
                 <Card.Title className='d-flex justify-content-between align-items-baseline fw-normal mb-3'>
                     <div className='me-2'>{cardName}</div>
-                    <div className='d-flex align-items-baseline'>{currencyFormatter.format(amount)} /
-                        <span className='text-muted fs-6 ms-1'>{currencyFormatter.format(max)}</span>
+                    <div className='d-flex align-items-baseline'>{currencyFormatter.format(amount)}
+                        {max && (
+                            <span className='text-muted fs-6 ms-1'> / {currencyFormatter.format(max)}</span>
+                        )}
                     </div>
                 </Card.Title>
-                <ProgressBar
-                    className='rounded-pill'
-                    variant={getProgressBarVariant(amount, max)}
-                    min={0}
-                    now={amount}
-                    max={max}
-                ></ProgressBar>
+                {max && (
+                    <ProgressBar
+                        className='rounded-pill'
+                        variant={getProgressBarVariant(amount, max)}
+                        min={0}
+                        now={amount}
+                        max={max}
+                    ></ProgressBar>
+                )}
                 <Stack direction='horizontal' gap="2" className="mt-4">
                     <Button variant="outline-primary">
                         Add Expense
