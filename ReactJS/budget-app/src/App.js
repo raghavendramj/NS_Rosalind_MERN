@@ -2,6 +2,7 @@ import "./App.css";
 import { Button, Container, Stack } from "react-bootstrap";
 import BudgetCard from "./components/budget";
 import AddBudgetModal from "./components/AddBudgetModal";
+import ViewExpensesModal from "./components/ViewExpensesModal";
 import { useState } from "react";
 import { BudgetsProvider, useBudgets } from "./contexts/BudgetsContext";
 import AddExpenseModal from "./components/AddExpenseModal";
@@ -18,6 +19,7 @@ function App() {
 
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false);
   const [showAddExpenseModal, setShowAddExpenseModal] = useState(false);
+  const [viewExpenseModalBudgetId, setViewExpenseModalBudgetId] = useState(false);
   const [addExpenseModalBudgetId, setAddExpenseModalBudgetId] = useState(false);
   const { budgets, getBudgetExpense } = useBudgets();
 
@@ -75,6 +77,10 @@ function App() {
         defaultBudgetId={addExpenseModalBudgetId}
         handleClose={() => setShowAddExpenseModal(false)}
       ></AddExpenseModal>
+      <ViewExpensesModal 
+        budgetId={viewExpenseModalBudgetId}
+        handleClose={() => setShowAddExpenseModal(false)}
+      ></ViewExpensesModal>
     </>
   );
 }

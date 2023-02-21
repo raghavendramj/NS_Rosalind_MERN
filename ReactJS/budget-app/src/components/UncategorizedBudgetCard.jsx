@@ -11,8 +11,7 @@ export default function UncategorizedBudgetCard(props) {
         (total, expense) => total + expense.amount,
         0
     );
-    console.log("Amount :- ", amount);
-
+    
     if(amount === 0)
     return null;
 
